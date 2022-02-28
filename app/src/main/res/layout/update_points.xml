@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:text="What's New"
+                android:id="@+id/rank_dialog_text1"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4c4c4c"
+                android:layout_marginLeft="15dp"
+                android:gravity="center|left"
+                android:visibility="gone"
+                android:layout_gravity="center|left"
+                android:text="1. Now you can have two factor authentication in login.
+"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:visibility="gone"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="2. More options to manage your Email notifications from mobile app."
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:visibility="gone"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="3. Now you can change password from profile section."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:gravity="center|left"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="3. Allow your caller to submit survey after call with post call survey feature."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:gravity="center|left"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="4. Improvements in global connect."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:visibility="gone"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="5. Now you can directly add reminder from call logs."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:visibility="gone"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="6. Check leaderboard and see how your team is performing."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#4c4c4c"
+                android:visibility="visible"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|left"
+                android:text="1. Performance improvements."/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:text="ok"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:textSize="16sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

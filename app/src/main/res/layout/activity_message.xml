@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent" android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/container"
+    android:layout_marginTop="40dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview_usermessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/info_emptymessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Empty Conversations"
+        android:textSize="25sp"
+        android:textColor="@color/icon_disabled"
+        android:gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
+    <com.callhippo.bueno.callhippo.FloatingActionButton
+        android:id="@+id/semi_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_size="normal"
+        app:fab_plusIconColor="@color/white"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/blue_semi_transparent_pressed"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

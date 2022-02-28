@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fab_expand_menu_button" type="id"/>
+    <item name="fab_label" type="id"/>
+    <item name="linplus1" type="id" />
+    <item name="linplus2" type="id" />
+    <item name="linplus3" type="id" />
+    <item name="linplus4" type="id" />
+    <item name="linplus5" type="id" />
+    <item name="lindel1" type="id" />
+    <item name="lindel2" type="id" />
+    <item name="lindel3" type="id" />
+    <item name="lindel4" type="id" />
+    <item name="lindel5" type="id" />
+    <item name="plus1" type="id" />
+    <item name="plus2" type="id" />
+    <item name="plus3" type="id" />
+    <item name="plus4" type="id" />
+    <item name="plus5" type="id" />
+    <item name="del1" type="id" />
+    <item name="del2" type="id" />
+    <item name="del3" type="id" />
+    <item name="del4" type="id" />
+    <item name="del5" type="id" />
+    <item name="single_contact_num" type="id" />
+    <item name="single_contact_num_v1" type="id" />
+    <item name="ic_save" type="id" />
+    <item name="addcontact3x" type="id" />
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:icon="@drawable/ic_filter"
+        android:title="Filter"
+        app:showAsAction="always">
+        <menu>
+
+            <group android:id="@+id/group"
+                android:checkableBehavior="single"
+                >
+
+            <item
+                android:id="@+id/all_calls"
+                android:title="All "
+                app:showAsAction="collapseActionView"/>
+                <item
+                    android:id="@+id/missed"
+                    android:title="Missed"
+                    app:showAsAction="collapseActionView|withText"/>
+
+                <item
+                android:id="@+id/voicemail"
+                android:title="Voicemail"
+                app:showAsAction="collapseActionView|withText"/>
+
+
+
+
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

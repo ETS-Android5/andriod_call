@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currentPasstxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:errorEnabled="true"
+                android:layout_margin="5dp">
+                <EditText
+                    android:id="@+id/currentPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock_black"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:hint="Enter a Current Password..."
+                    android:inputType="textPassword"
+                    android:paddingBottom="20dp"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/newPasstxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:errorEnabled="true"
+                android:layout_margin="5dp">
+                <EditText
+                    android:id="@+id/newPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock_black"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:hint="Enter New Password..."
+                    android:inputType="textPassword"
+                    android:paddingBottom="20dp"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmPasstxti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:errorEnabled="true"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+                <EditText
+                    android:id="@+id/confirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock_black"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:hint="Confirm New Password..."
+                    android:inputType="textPassword"
+                    android:paddingBottom="20dp"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/l_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="@color/black"
+                android:fontFamily="@font/proximanovasofts_semibold"
+                />
+
+                <TextView
+                    android:textColor="@color/colorblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Password must match following conditions."
+                    android:fontFamily="@font/proximanovasoft_regular"/>
+
+                <TextView
+                    android:id="@+id/eightchar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minumum 8 Characters "
+                    android:drawableLeft="@drawable/circle_org"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/onenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="must contain at least 1 number"
+                    android:drawableLeft="@drawable/circle_org"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/lowerchar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="must contain at least 1 lowercase letter"
+                    android:drawableLeft="@drawable/circle_org"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/upperchar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="must contain at least 1 uppercase letter"
+                    android:drawableLeft="@drawable/circle_org"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/specialchar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="must contain at least 1 special character"
+                    android:drawableLeft="@drawable/circle_org"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

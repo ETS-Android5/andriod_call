@@ -1,0 +1,2181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_main"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/l_subuser_listing"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_weight="3"
+        android:background="@drawable/ic_layout_bottom_shadow"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/icon_back_subuser"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_shadow"
+                app:srcCompat="@drawable/ic_backv" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:padding="10dp"
+                android:text="Select Sub-User From List"
+                android:textColor="@color/tranfer_name"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/l_detail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:id="@+id/txt_subuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="Call Details"/>
+
+
+
+
+                <View
+                    android:id="@+id/bg_deactivate_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/divider_new"/>
+
+                <TextView
+                    android:id="@+id/txt_highlight_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="Sub-User"/>
+
+
+
+                <View
+                    android:id="@+id/view_subuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:background="@color/colorPrimary"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/l_history_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="2dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/txt_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="Contacts"/>
+
+                <View
+                    android:id="@+id/view_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_highlight_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="Call History"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shadow"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/edt_srch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_subusers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:divider="@android:color/transparent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_subusers_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/l_new_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_user" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_typed_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasofts_semibold"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fbCall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:elevation="0dp"
+                    app:elevation="0dp"
+                    android:focusable="false"
+
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:src="@drawable/ic_local_phone_white_vector"
+                    app:srcCompat="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transfer_call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_weight="3"
+        android:background="@drawable/ic_layout_bottom_shadow"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_shadow"
+                app:srcCompat="@drawable/ic_backv" />
+
+            <TextView
+                android:id="@+id/txt_tr_sub_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/tranfer_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_blindTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/edittext_shadow"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_transfer_now_v2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovasoft_regular"
+                android:padding="10dp"
+                android:text="Transfer Now"
+                android:textColor="@color/tranfer_name"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_talktouser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/edittext_shadow"
+            android:gravity="start|center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_user" />
+
+            <TextView
+                android:id="@+id/tx_sub_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovasoft_regular"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/tranfer_name"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/switch_call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_weight="3"
+        android:background="@drawable/ic_layout_bottom_shadow"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:padding="2dp"
+                android:text="Switch Call Between Users"
+                android:textColor="@color/tranfer_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:id="@+id/l_btn_fromnumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_shadow"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_from_merge"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_user" />
+
+                <TextView
+                    android:id="@+id/t_btnfrom_merge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_btn_tonumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_shadow_orange"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_to_merge"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_user_orange" />
+
+                <TextView
+                    android:id="@+id/t_btn_to_merge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:id="@+id/l_btn_transfercall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_shadow"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_transfer_black_v2"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Transfer Call"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_btn_mergecall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_shadow"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_merge_v2" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Merge Call    "
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:id="@+id/l_btn_hangup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/edittext_shadow_orange"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_transfer_black_v2"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Hang up"
+                    android:textColor="@color/red_text"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/conference_call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_weight="3"
+        android:background="@drawable/ic_layout_bottom_shadow"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/l_fromuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_shadow"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/bg_circle_v2"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_fromname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Number"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_cross_red"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/l_subuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_shadow"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_circle_v2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_subusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub user"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_cross_red"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="25dp">
+
+
+
+            <Button
+                android:id="@+id/btn_endme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanovasoft_regular"
+                android:drawablePadding="8dp"
+                android:background="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_cross_white"
+                android:text="Leave Conference"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btn_endall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanovasoft_regular"
+                android:drawablePadding="8dp"
+                android:background="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_end_conf_v2"
+                android:text="End Conference"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/l_dialpad_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/top_shadow"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/phoneNumberbm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/proximanovasofts_semibold"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+
+            <ImageView
+                android:id="@+id/img_back_dialpad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_delete_text_v2" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/top_shadow"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnOnem"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="1"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btntwom"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="2"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="ABC"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnthreem"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="3"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="DEF"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnfourm"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="4"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GHI"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnfivem"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="5"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="JKL"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnsixm"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="6"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="MNO"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnsevenm"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="7"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PQRS"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btneightm"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="8"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="TUV"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnninem"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="9"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="WXYZ"
+                    android:textColor="@color/colorsilver"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnstarm"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="*"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnzerom"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="0"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnhasm"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="#"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/l_lastcall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/feedback_bt_shadow"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Last Call Detail"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_close"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_cross_lastcall"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_lasttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_status_complete_incoming1"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/txt_lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:fontFamily="@font/proximanovasoft_regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_lastname_noname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:maxLines="1"
+                        android:text="No previous calls on this number"
+                        android:fontFamily="@font/proximanovasoft_regular"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txt_lastnamedot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textSize="12sp"
+                        android:text="..."
+                        android:fontFamily="@font/proximanovasoft_regular"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+
+                    <TextView
+                        android:id="@+id/txt_laststatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:fontFamily="@font/proximanovasoft_regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_lasttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="11sp"
+                        android:text=""
+                        android:fontFamily="@font/proximanovasoft_regular"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView61"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignStart="@+id/l_dialpad_top"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/icon_user" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:text="Outgoing Call"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="@color/call_type"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textviewoutgoingfromNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:maxLines="1"
+                android:text="Outgoing"
+                android:textAlignment="center"
+                android:textColor="@color/call_type"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_toname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/proximanovasoft_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/call_name"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_tonumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/call_name"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/textViewOutgoingtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="00:00"
+                    android:textColor="@color/call_name"
+
+
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/Speaker"-->
+                <!--                    android:layout_width="40dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:src="@drawable/ic_loud_v2"/>-->
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/border_custom">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:src="@drawable/call_survey_org"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:background="#FFF7E8"-->
+<!--                                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Shopify"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:background="#FFF7E8"-->
+<!--                        android:drawableLeft="@drawable/call_survey_org"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/l_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/border_custom"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="2"-->
+<!--                    android:visibility="visible">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/border_custom"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        &lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:background="#FFF7E8"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:src="@drawable/call_survey_org"&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;                            />&ndash;&gt;-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/lbl_notes"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/proximanovasoft_medium"-->
+<!--                            android:gravity="center"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Notes"-->
+<!--                            android:drawableLeft="@drawable/call_survey_org"-->
+<!--                            android:textColor="#4a5353"-->
+<!--                            android:textSize="16sp"-->
+
+<!--                            android:textStyle="bold" />-->
+<!--                    </LinearLayout>-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+
+<!--                        android:layout_weight="1"-->
+
+<!--                        android:orientation="horizontal"-->
+<!--                        android:background="@drawable/border_custom_whitebg">-->
+<!--                        &lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:background="#FFF7E8"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:src="@drawable/call_survey_org"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            />&ndash;&gt;-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/lbl_integrations"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/proximanovasoft_medium"-->
+<!--                            android:gravity="center"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Integration"-->
+<!--                            android:textColor="#4a5353"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:drawableLeft="@drawable/call_survey_org"/>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/takenotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <com.callhippo.bueno.callhippo.Utils.CustomautoCompleteTextview
+
+                        android:padding="20dp"
+                        android:id="@+id/edt_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:textSize="16sp"
+                        android:background="@drawable/bg_feedback"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:gravity="fill_horizontal"
+                        android:hint="Add notes and add tags by typing @"
+                        android:textColor="@color/black"
+                     />
+
+
+                    <!--                    <EditText-->
+
+                    <!--                        android:padding="20dp"-->
+                    <!--                        android:id="@+id/edt_feedback"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="200dp"-->
+                    <!--                        android:textSize="16sp"-->
+                    <!--                        android:background="@drawable/bg_feedback"-->
+                    <!--                        android:fontFamily="@font/proximanovasoft_medium"-->
+                    <!--                        android:gravity="fill_horizontal"-->
+                    <!--                        android:hint="Add notes and add tags by typing @"-->
+                    <!--                        android:textColor="@color/black" />-->
+
+                    <!--                        <ListView-->
+                    <!--                            android:id="@+id/Listview_tags"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:visibility="visible"/>-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/integration_det1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/boder_custom_integration"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/customerdetail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Customer Details"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:padding="2dp"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:padding="2dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Email"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:fontFamily="@font/proximanovasoft_regular"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="jigar@callhippo.com"-->
+<!--                        android:gravity="right"-->
+<!--                        android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:padding="2dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Lifetime order value"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:fontFamily="@font/proximanovasoft_regular"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="$1800"-->
+<!--                        android:gravity="right"-->
+<!--                        android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/integration_det2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/boder_custom_integration"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/orderdetail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Order #001"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:padding="2dp"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:padding="2dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Amount"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:fontFamily="@font/proximanovasoft_regular"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="$800"-->
+<!--                        android:gravity="right"-->
+<!--                        android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:padding="2dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Tracking URL"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:fontFamily="@font/proximanovasoft_regular"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="freedhx.com/200"-->
+<!--                        android:gravity="right"-->
+<!--                        android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:padding="2dp">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Status"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:fontFamily="@font/proximanovasoft_regular"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Paid"-->
+<!--                        android:gravity="right"-->
+<!--                        android:fontFamily="@font/proximanovasoft_bold"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/l_lastcall"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:background="@drawable/feedback_bt_shadow"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/linearLayout4">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:text="Last Call Detail"-->
+    <!--android:fontFamily="@font/proximanovasoft_regular"-->
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_close"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:src="@drawable/ic_cross_lastcall"/>-->
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="2dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_lasttype"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/ic_status_complete_incoming1"/>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_lastname"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text=""-->
+    <!--android:fontFamily="@font/proximanovasoft_regular"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="10dp">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_laststatus"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text=""-->
+    <!--android:fontFamily="@font/proximanovasoft_regular"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_lasttime"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:textSize="11sp"-->
+    <!--android:text=""-->
+    <!--android:fontFamily="@font/proximanovasoft_regular"-->
+    <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/l_mute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_mute_v2" />
+
+                <TextView
+                    android:id="@+id/tx_mute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="MUTE"
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/l_hold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_hold_v2" />
+
+                <TextView
+                    android:id="@+id/tx_hold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="HOLD"
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_forward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ic_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_forward_v2" />
+
+                <TextView
+                    android:id="@+id/tx_forward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="TRANSFER"
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/l_loud"
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ic_loud"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/ic_loud_v2" />
+
+                            <TextView
+                                android:id="@+id/tx_loud"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proximanovasoft_regular"
+                                android:text="SPEAKER"
+                                android:textAlignment="center"
+                                android:textColor="@color/call_mute" />
+                        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/l_record"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_record_grey" />
+
+                <TextView
+                    android:id="@+id/tx_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="PAUSE"
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/l_dialpad"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_dialer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_dialpad_v2" />
+
+                <TextView
+                    android:id="@+id/tx_dialer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="DIALER"
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/l_notes_v1"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/notes_grey" />
+
+                <TextView
+                    android:id="@+id/tx_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="NOTES"
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_hangup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle_outline_hangup_new"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_hangup_v2" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabHangup"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:backgroundTint="#FF0000"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_call_end_white_vector"
+                    app:borderWidth="0dp"
+                    app:srcCompat="@color/red_text"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/l_postcall"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ic_postcall"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/call_survey_grey" />-->
+
+                <TextView
+                    android:id="@+id/tx_postcall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/call_mute" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/l_integration"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="62dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ic_integrat"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/integration_grey" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tx_integrat"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    andraoid:layout_weight="1"-->
+<!--                    android:fontFamily="@font/proximanovasoft_regular"-->
+<!--                    android:text="INTEGRATION"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/call_mute" />-->
+<!--            </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

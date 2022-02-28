@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_filter"
+        android:title="Filter"
+        app:showAsAction="always">
+        <menu>
+
+            <group android:id="@+id/group"
+                android:checkableBehavior="single"
+                >
+
+                <item
+                    android:id="@+id/today"
+                    android:title="Today "
+                    app:showAsAction="collapseActionView"/>
+                <item
+                    android:id="@+id/yesterday"
+                    android:title="Yesterday"
+                    app:showAsAction="collapseActionView|withText"/>
+
+                <item
+                    android:id="@+id/lastweeek"
+                    android:title="Last week"
+                    app:showAsAction="collapseActionView|withText"/>
+                <item
+                    android:id="@+id/lastmonth"
+                    android:title="Last month"
+                    app:showAsAction="collapseActionView|withText"/>
+
+
+
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                app:srcCompat="@drawable/ic_person" />
+
+            <EditText
+                android:id="@+id/contactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_account_circle_black"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingBottom="20dp"
+                android:textSize="14sp"
+                android:theme="@style/ContactsEditText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone"
+                    android:visibility="gone" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp_addcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_textSize="13sp"
+                    android:visibility="gone"
+                    app:ccp_autoDetectCountry="false"
+                    app:ccp_defaultNameCode="US"/>
+
+
+
+                <EditText
+                    android:id="@+id/contactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:hint="Phone Number"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="14sp"
+                    android:inputType="phone"
+                    android:theme="@style/ContactsEditText" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorblack" />
+
+            <EditText
+
+                android:id="@+id/contactEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_email_black"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:hint="Email address"
+                android:inputType="textPersonName"
+                android:paddingBottom="20dp"
+                android:textSize="14sp"
+                android:theme="@style/ContactsEditText" />
+
+
+
+            <EditText
+
+                android:id="@+id/contactCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_work_black_24dp"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:hint="Company name"
+                android:inputType="textPersonName"
+                android:paddingBottom="20dp"
+                android:textSize="14sp"
+                android:theme="@style/ContactsEditText" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

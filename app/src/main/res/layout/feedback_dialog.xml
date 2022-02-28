@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:text="What went wrong?"
+        android:id="@+id/dialog_title"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:layout_marginLeft="5dp">
+
+
+        <CheckBox
+            android:id="@+id/cb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I couldn't hear the other person"
+            android:textColor="#cc000000"/>
+
+        <CheckBox
+            android:id="@+id/cb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other person couldn't hear me"
+            android:textColor="#cc000000"/>
+
+
+        <CheckBox
+            android:id="@+id/cb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The voice was breaking up"
+            android:textColor="#cc000000"/>
+
+
+        <CheckBox
+            android:id="@+id/cb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There was some lag"
+            android:textColor="#cc000000"/>
+
+        <CheckBox
+            android:id="@+id/cb_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voice was echoing"
+            android:textColor="#cc000000"/>
+
+        <EditText
+            android:id="@+id/edt_fd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="write here if nothing fits from above options"
+            android:textSize="14sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_not"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:text="Not now"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

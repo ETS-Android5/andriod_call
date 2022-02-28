@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l_fromuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_tr_user"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_fromname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From Number"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cross_red"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l_subuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_tr_user"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_subusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub user"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cross_red"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="25dp">
+
+
+
+        <Button
+            android:id="@+id/btn_endme"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Leave conference"/>
+
+
+
+        <Button
+            android:id="@+id/btn_endall"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Conference"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

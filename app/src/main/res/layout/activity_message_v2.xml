@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@android:color/white">
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent" android:background="@color/white">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/container">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_usermessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/info_emptymessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Empty Conversations"
+        android:textSize="25sp"
+        android:textColor="@color/icon_disabled"
+        android:gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
+    <com.callhippo.bueno.callhippo.FloatingActionButton
+        android:id="@+id/semi_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_size="normal"
+        app:fab_plusIconColor="@color/white"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/blue_semi_transparent_pressed"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <LinearLayout
+
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="-3dp"
+        android:background="@drawable/linear_layout_shadow_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/l_mark_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_check_b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:text="MARK AS READ"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_del_b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:text="DELETE"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

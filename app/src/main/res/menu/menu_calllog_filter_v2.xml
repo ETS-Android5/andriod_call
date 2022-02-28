@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+                <item
+                    android:id="@+id/inbox_filter"
+                    android:icon="@drawable/ic_filter"
+                    android:title="Inbox Filter"
+                    app:showAsAction="collapseActionView|withText"
+                    >
+
+                    <menu>
+                        <item
+                            android:id="@+id/missed"
+                            android:icon="@drawable/ic_misscall"
+                            android:title="Missed calls"
+                            app:showAsAction="collapseActionView|withText"/>
+
+                        <item
+                            android:id="@+id/voicemail"
+                            android:icon="@drawable/ic_voicemail"
+                            android:title="Voicemail"
+                            app:showAsAction="collapseActionView|withText"/>
+                        <item
+                             android:id="@+id/feedback"
+                            android:icon="@drawable/ic_feedback"
+                             android:title="Feedback"
+                             app:showAsAction="collapseActionView|withText"/>
+
+                        <item
+                            android:id="@+id/all_filter"
+                            android:icon="@drawable/ic_allcall"
+                            android:title="All"
+                            app:showAsAction="collapseActionView|withText"
+                            />
+
+                    </menu>
+                </item>
+
+                <item
+                android:id="@+id/Tagmenu"
+                android:title="Tag Filter"
+                app:showAsAction="collapseActionView|withText">
+                    <menu></menu>
+                </item>
+
+                <item
+                    android:id="@+id/markcomplete"
+                    android:title="Mark as complete"
+                    android:icon="@drawable/ic_markcomp"
+                    app:showAsAction="collapseActionView|withText"/>
+
+
+
+
+</menu>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_callhippo_call" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="CALLHIPPO VOICE CALL"
+                android:textColor="@color/colorwhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textViewIncomingfromnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorwhite"
+                android:textSize="32dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:weightSum="0">
+                <TextView
+                    android:id="@+id/textViewIncoming"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_height="wrap_content"
+                    android:text="Incoming"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/incoming_department"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorwhite"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textViewIncomingtime"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/incomingMute"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_mic_none_white_24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/incomingHold"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_pause_white"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/incomingSpeaker"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_volume_mute_white_24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/incomingdialer"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_dialpad_white_24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_calltras"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ic_calltrans"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_transfercall"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.example.pulsator4droid.PulsatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            app:pulse_count="5"
+            app:pulse_duration="2600"
+            app:pulse_repeat="0"
+            app:pulse_color="#e37949"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="Accelerate"
+            android:gravity="center"
+            android:id="@+id/pulsator">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:gravity="center">
+
+            <ImageView
+                android:id="@+id/userpic"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:src="@drawable/user_white" />
+            </LinearLayout>
+        </com.example.pulsator4droid.PulsatorLayout>
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorwhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_outline_hangup_new"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/btnIncomingHangup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_call_end_white_24dp_new" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/callreceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_outline_answer_new"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:visibility="visible"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="30dp">
+
+                <ImageView
+                    android:id="@+id/btnIncomingReceive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_call_white_24dp_new" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

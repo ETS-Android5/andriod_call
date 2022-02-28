@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_dialer"
+            android:icon="@drawable/ic_dialpad_new"
+            android:title="DIALER"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/nav_calllog"
+            android:icon="@drawable/ic_calls_new"
+            android:title="ALL CALLS"
+            />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contact_new"
+            android:title="CONTACTS"
+            />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_sms_new"
+            android:title="SMS"
+            />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_new"
+            android:title="FEEDBACK"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout1"
+            android:title="LOGOUT" />
+    </group>
+</menu>

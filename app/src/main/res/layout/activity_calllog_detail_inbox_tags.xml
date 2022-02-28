@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.callhippo.bueno.callhippo.Calllog_detail">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_calldetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/proximanovasoft_bold"
+                android:gravity="center"
+                android:text="Call Details"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_layout_bottom_shadow"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/bg_circle_v22"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/txt_caller_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/proximanovasoft_bold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/font_calllog"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_caller_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/font_detail_number"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/l_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:id="@+id/l_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/bg_circle_primarycolor"
+
+                        android:visibility="visible">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fbAddContact"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:elevation="0dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_add_white_vector"
+                            app:elevation="0dp"
+                            app:srcCompat="@color/colorPrimary"
+                            app:fabCustomSize="40dp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/font_detail_lable"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="    ADD     "
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/l_edit_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/bg_circle_primarycolor"
+
+                        android:visibility="visible">
+
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fbEdit"
+                            android:layout_width="45dp"
+                            android:scaleType="center"
+                            android:elevation="0dp"
+                            app:elevation="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:src="@drawable/ic_edit_white_vector"
+                            app:srcCompat="@color/colorPrimary"
+                            app:fabCustomSize="40dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="    EDIT    "
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/l_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/bg_circle_primarycolor"
+
+                        android:visibility="visible">
+
+
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fbCall"
+                            android:layout_width="45dp"
+                            android:scaleType="center"
+                            android:elevation="0dp"
+                            app:elevation="0dp"
+                            android:focusable="false"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:src="@drawable/ic_local_phone_white_vector"
+                            app:srcCompat="@color/colorPrimary"
+                            app:fabCustomSize="40dp"/>
+                    </LinearLayout>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/bg_circle_primarycolor"-->
+                    <!--android:padding="12dp"-->
+                    <!--android:src="@drawable/ic_call_white_24dp_new" />-->
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/font_detail_lable"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="    CALL    "
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/l_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_circle_primarycolor"
+                        android:visibility="visible">
+
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fbSMS"
+                            android:layout_width="45dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+
+
+                            android:clickable="true"
+                            android:elevation="0dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_sms_white_vector"
+                            app:elevation="0dp"
+                            app:fabCustomSize="40dp"
+                            app:srcCompat="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/font_detail_lable"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="  SMS  "
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/bg_circle_primarycolor"
+
+                        android:visibility="visible">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fbAddreminder"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:elevation="0dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_reminder_vc"
+                            app:elevation="0dp"
+                            app:srcCompat="@color/colorPrimary"
+                            app:fabCustomSize="40dp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/font_detail_lable"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="REMINDER"
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_blocklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/bg_circle_primarycolor"
+
+                        android:visibility="visible">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fbAddBlocklist"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:elevation="0dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_blacklist_vc"
+                            app:elevation="0dp"
+                            app:srcCompat="@color/colorPrimary"
+                            app:fabCustomSize="40dp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/font_detail_lable"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="BLACKLIST"
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/l_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/l_detail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_normal_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_history_new"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_normal_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="Call Details"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <View
+                    android:id="@+id/bg_deactivate_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/divider_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_highlight_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_history_new"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_highlight_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="Call Details"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <View
+                    android:id="@+id/bg_activate_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:background="@color/font_calllog"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/l_history_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="2dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_normal_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_history"/>
+
+                    <TextView
+                        android:id="@+id/txt_normal_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="Call History"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/bg_deactivate_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_highlight_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_history"/>
+
+                    <TextView
+                        android:id="@+id/txt_highlight_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="Call History"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/bg_activate_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/font_calllog"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/l_feedback_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="2dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_normal_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_grey_feedback_36"/>
+
+                    <TextView
+                        android:id="@+id/txt_normal_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="Feedback"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/bg_deactivate_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_highlight_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_grey_feedback_36"/>
+
+                    <TextView
+                        android:id="@+id/txt_highlight_feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:fontFamily="@font/proximanovasoft_medium"
+                        android:text="Feedback"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/bg_activate_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/font_calllog"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll_detail"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:divider="@drawable/lineardivider"
+                    android:showDividers="middle"
+                    android:background="@color/colorwhite"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/calllogs_details_date"
+                                android:layout_width="match_parent"
+                                android:textSize="12dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proximanovasoft_medium"
+                                android:text=""/>
+
+                            <TextView
+                                android:id="@+id/lbl_callnotes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/proximanovasoft_medium"
+                                android:text="Call Notes"/>
+
+                            <ImageView
+                                android:id="@+id/img_note"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:paddingLeft="5dp"
+                                android:src="@drawable/ic_note_acw_2"
+                                android:layout_marginEnd="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l_below"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/l_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/img_calltype"
+                                        android:layout_width="25dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:src="@drawable/ic_status_complete_incoming1" />
+
+                                    <TextView
+                                        android:id="@+id/txt_call_type"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:gravity="left"
+                                        android:textColor="@color/font_calllog"
+                                        android:text="Incoming Call"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_call_duration"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:gravity="right"
+                                        android:textColor="@color/font_calllog"
+                                        android:text="2 min 30 s"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:id="@+id/l_recording"
+                                android:layout_width="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:id="@+id/voicemail_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <ImageView
+                                        android:id="@+id/img_recording_lable"
+                                        android:layout_width="25dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_status_voicemail_v2" />
+
+                                    <TextView
+                                        android:id="@+id/recording_lable"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="12dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:text="Recording" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_record_play"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/round_button_background"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_play_arrow_white_24dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:gravity="left"
+                                        android:visibility="gone"
+                                        android:text="Recorded Call"
+                                        android:textSize="16dp" />
+
+                                    <SeekBar
+                                        android:id="@+id/SeekBarplay"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:progressBackgroundTint="@color/colorPrimary"
+                                        android:progressTint="@color/colorPrimaryDark"
+                                        android:thumbTint="@color/colorPrimaryDark"
+                                        />
+                                    <TextView
+                                        android:id="@+id/seekbar_timer"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:text="00.00"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txt_recording_duration"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:gravity="right"
+                                        android:text="856 KB"
+                                        android:visibility="gone"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/t_cript_layout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <Button
+                                        android:id="@+id/t_cript_btn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:visibility="gone"
+                                        android:background="@drawable/sent_rounded_background_v2"
+                                        android:clickable="true"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:gravity="left"
+                                        android:paddingBottom="@dimen/activity_horizontal_smsview_margin"
+                                        android:paddingLeft="@dimen/activity_horizontal_smsview_margin"
+                                        android:paddingRight="@dimen/activity_horizontal_smsview_margin"
+                                        android:paddingTop="@dimen/activity_horizontal_smsview_margin"
+                                        android:text="Transcripted Voicemail"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/l_norecording"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:padding="5dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="You don't have access to this recording"
+                                    android:fontFamily="@font/proximanovasoft_medium"
+                                    android:textColor="@color/font_calllog"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/l_callername"
+                                android:layout_width="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:id="@+id/caller_name_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                    <TextView
+                                        android:id="@+id/lbl_callername"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="12dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:text="Caller Name" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_contacts"/>
+
+                                    <TextView
+                                        android:id="@+id/t_cname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/proximanovasoft_medium"
+                                        android:textColor="@color/font_calllog"/>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/l_department"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="20dp"
+                                android:gravity="center|left"
+                                android:orientation="horizontal">
+
+                                <com.hbb20.CountryCodePicker
+                                    android:id="@+id/country_flag"
+                                    android:layout_width="45dp"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    app:ccp_showArrow="false"
+                                    app:ccp_clickable="false"
+                                    app:ccp_showFlag="true"
+                                    app:ccp_defaultNameCode="US"
+                                    app:ccp_countryPreference="US,NZ,AUS,GB"
+                                    app:ccp_showNameCode="false"
+                                    app:ccp_showPhoneCode="false"
+                                    app:ccp_textSize="14sp" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_call_department"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-5dp"
+                                    android:fontFamily="@font/proximanovasoft_medium"
+                                    android:gravity="left|center"
+                                    android:text=""
+                                    android:textColor="@color/font_calllog"
+                                    android:textSize="14dp" />
+
+
+
+                            </LinearLayout>
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:visibility="gone"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@drawable/lineardivider" />
+
+                            <LinearLayout
+                                android:id="@+id/tag_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@drawable/border_custom_whitebg">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tags"
+                                    android:textSize="18sp"
+                                    android:fontFamily="@font/proximanovasoft_regular"
+                                    android:textColor="@color/black"/>
+                                <GridView
+                                    android:id="@+id/gridview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:numColumns="2"
+                                    android:nestedScrollingEnabled="true">
+
+                                </GridView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_notes"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/l_backtodetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_backv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanovasoft_medium"
+                    android:text="Back to details"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:text="Note"/>
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/txt_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                android:textSize="14sp"
+                android:text=""
+                android:scrollbars = "vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_feedback"
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:gravity="fill_horizontal"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_loglist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_logs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feedback_logs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/text_nofeedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No feedback found."
+                android:fontFamily="@font/proximanovasoft_medium"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

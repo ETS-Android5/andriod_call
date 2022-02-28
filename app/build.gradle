@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'io.fabric'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.callhippo.bueno.callhippo"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 40
+        versionName "2.18"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+        resConfigs "en"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir file('jni/')
+        }
+    }
+    configurations { all*.exclude module: 'gson' }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+repositories {
+    maven {
+        // Replace snapshots by releases for releases !
+//        url "https://linphone.org/snapshots/maven_repository"
+        url "https://linphone.org/maven_repository/"
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+ //   implementation 'com.crashlytics.sdk.android:crashlytics:2.9.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    //Optional: see how to use the utility.
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'com.github.turing-tech:MaterialScrollBar:12.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.hbb20:ccp:2.5.3'
+    implementation 'com.github.ybq:Android-SpinKit:1.1.0'
+    implementation project(':loadmore')
+    implementation project(':pulsator4droid')
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation files('libs/gson-2.6.2.jar')
+//    compile files('libs/linphone-sdk-android-4.2.aar')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'fr.bmartel:jspeedtest:1.32.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:7.2.2'
+    implementation 'io.socket:socket.io-client:0.8.3'
+    implementation 'com.wootric:wootric-sdk-android:2.8.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    //    implementation 'org.linphone:linphone-sdk-android:4.2-52-g2798f74'
+    //  implementation 'org.linphone:linphone-sdk-android:4.2-103-g321092b'
+//    implementation 'com.google.android.gms:play-services-safetynet:11.4.2'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+    // Add the Firebase Crashlytics SDK.
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+
+    // Recommended: Add the Google Analytics SDK.
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    implementation 'com.github.pratikbutani:MultiSelectSpinner:1.0.1'
+
+    implementation 'org.linphone:linphone-sdk-android:4.5.23'
+//    implementation 'org.linphone:linphone-sdk-android:5.0.66'
+}
+apply plugin: 'com.google.gms.google-services'

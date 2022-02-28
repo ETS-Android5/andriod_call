@@ -1,0 +1,3347 @@
+{
+  "countries": {
+    "AD": {
+      "name": "Andorra",
+      "areaCode": {},
+      "zones": [
+        "Europe/Andorra"
+      ]
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "areaCode": {},
+      "zones": [
+        "Asia/Dubai"
+      ]
+    },
+    "AF": {
+      "name": "Afghanistan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Kabul"
+      ]
+    },
+    "AG": {
+      "name": "Antigua & Barbuda",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "AI": {
+      "name": "Anguilla",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "AL": {
+      "name": "Albania",
+      "areaCode": {},
+      "zones": [
+        "Europe/Tirane"
+      ]
+    },
+    "AM": {
+      "name": "Armenia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Yerevan"
+      ]
+    },
+    "AO": {
+      "name": "Angola",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "AQ": {
+      "name": "Antarctica",
+      "areaCode": {},
+      "zones": [
+        "Antarctica/Casey",
+        "Antarctica/Davis",
+        "Antarctica/DumontDUrville",
+        "Antarctica/Mawson",
+        "Antarctica/Palmer",
+        "Antarctica/Rothera",
+        "Antarctica/Syowa",
+        "Antarctica/Troll",
+        "Antarctica/Vostok",
+        "Pacific/Auckland"
+      ]
+    },
+    "AR": {
+      "name": "Argentina",
+      "areaCode": {},
+      "zones": [
+        "America/Argentina/Buenos_Aires",
+        "America/Argentina/Cordoba",
+        "America/Argentina/Salta",
+        "America/Argentina/Jujuy",
+        "America/Argentina/Tucuman",
+        "America/Argentina/Catamarca",
+        "America/Argentina/La_Rioja",
+        "America/Argentina/San_Juan",
+        "America/Argentina/Mendoza",
+        "America/Argentina/San_Luis",
+        "America/Argentina/Rio_Gallegos",
+        "America/Argentina/Ushuaia"
+      ]
+    },
+    "AS": {
+      "name": "Samoa (American)",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Pago_Pago"
+      ]
+    },
+    "AT": {
+      "name": "Austria",
+      "areaCode": {},
+      "zones": [
+        "Europe/Vienna"
+      ]
+    },
+    "AU": {
+      "name": "Australia",
+      "areaCode": {
+        "08": {
+          "name": "Adelaide,Darwin,Bunbury,Rockingham,Perth,Mandurah",
+          "timezone": "Australia/Perth"
+        },
+        "8": {
+          "name": "Adelaide,Darwin,Bunbury,Rockingham,Perth,Mandurah",
+          "timezone": "Australia/Perth"
+        },
+        "02": {
+          "name": "Albury-Wodonga,Canberra,Gosford,Newcastle,Orange,Port Macquarie,Sydney,Tamworth,Maitland,Wollongong,Wagga Wagga",
+          "timezone": "Australia/Sydney"
+        },
+        "2": {
+          "name": "Albury-Wodonga,Canberra,Gosford,Newcastle,Orange,Port Macquarie,Sydney,Tamworth,Maitland,Wollongong,Wagga Wagga",
+          "timezone": "Australia/Sydney"
+        },
+        "03": {
+          "name": "Ballarat,Bendigo,Melbourne,Melton,Mildura,Hobart,Launceston,Shepparton,Sunbury,Warrnambool,Geelong",
+          "timezone": "Australia/Melbourne"
+        },
+        "3": {
+          "name": "Ballarat,Bendigo,Melbourne,Melton,Mildura,Hobart,Launceston,Shepparton,Sunbury,Warrnambool,Geelong",
+          "timezone": "Australia/Melbourne"
+        },
+        "07": {
+          "name": "Brisbane,Bundaberg,Cairns,Gold Coast,Hervey Bay,Mackay,Rockhampton,Sunshine Coast,Toowoomba,Townsville,Tweed Heads",
+          "timezone": "Australia/Brisbane"
+        },
+        "7": {
+          "name": "Brisbane,Bundaberg,Cairns,Gold Coast,Hervey Bay,Mackay,Rockhampton,Sunshine Coast,Toowoomba,Townsville,Tweed Heads",
+          "timezone": "Australia/Brisbane"
+        }
+      },
+      "zones": [
+        "Australia/Hobart",
+        "Australia/Lord_Howe",
+        "Antarctica/Macquarie",
+        "Australia/Currie",
+        "Australia/Melbourne",
+        "Australia/Sydney",
+        "Australia/Broken_Hill",
+        "Australia/Brisbane",
+        "Australia/Lindeman",
+        "Australia/Adelaide",
+        "Australia/Darwin",
+        "Australia/Perth",
+        "Australia/Eucla"
+      ]
+    },
+    "AW": {
+      "name": "Aruba",
+      "areaCode": {},
+      "zones": [
+        "America/Curacao"
+      ]
+    },
+    "AX": {
+      "name": "Åland Islands",
+      "areaCode": {},
+      "zones": [
+        "Europe/Helsinki"
+      ]
+    },
+    "AZ": {
+      "name": "Azerbaijan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Baku"
+      ]
+    },
+    "BA": {
+      "name": "Bosnia & Herzegovina",
+      "areaCode": {},
+      "zones": [
+        "Europe/Belgrade"
+      ]
+    },
+    "BB": {
+      "name": "Barbados",
+      "areaCode": {},
+      "zones": [
+        "America/Barbados"
+      ]
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "areaCode": {},
+      "zones": [
+        "Asia/Dhaka"
+      ]
+    },
+    "BE": {
+      "name": "Belgium",
+      "areaCode": {},
+      "zones": [
+        "Europe/Brussels"
+      ]
+    },
+    "BF": {
+      "name": "Burkina Faso",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "areaCode": {},
+      "zones": [
+        "Europe/Sofia"
+      ]
+    },
+    "BH": {
+      "name": "Bahrain",
+      "areaCode": {},
+      "zones": [
+        "Asia/Qatar"
+      ]
+    },
+    "BI": {
+      "name": "Burundi",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "BJ": {
+      "name": "Benin",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "BL": {
+      "name": "St Barthelemy",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "BM": {
+      "name": "Bermuda",
+      "areaCode": {},
+      "zones": [
+        "Atlantic/Bermuda"
+      ]
+    },
+    "BN": {
+      "name": "Brunei",
+      "areaCode": {},
+      "zones": [
+        "Asia/Brunei"
+      ]
+    },
+    "BO": {
+      "name": "Bolivia",
+      "areaCode": {},
+      "zones": [
+        "America/La_Paz"
+      ]
+    },
+    "BQ": {
+      "name": "Caribbean NL",
+      "areaCode": {},
+      "zones": [
+        "America/Curacao"
+      ]
+    },
+    "BR": {
+      "name": "Brazil",
+      "areaCode": {},
+      "zones": [
+        "America/Noronha",
+        "America/Belem",
+        "America/Fortaleza",
+        "America/Recife",
+        "America/Araguaina",
+        "America/Maceio",
+        "America/Bahia",
+        "America/Sao_Paulo",
+        "America/Campo_Grande",
+        "America/Cuiaba",
+        "America/Santarem",
+        "America/Porto_Velho",
+        "America/Boa_Vista",
+        "America/Manaus",
+        "America/Eirunepe",
+        "America/Rio_Branco"
+      ]
+    },
+    "BS": {
+      "name": "Bahamas",
+      "areaCode": {},
+      "zones": [
+        "America/Nassau"
+      ]
+    },
+    "BT": {
+      "name": "Bhutan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Thimphu"
+      ]
+    },
+    "BW": {
+      "name": "Botswana",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "BY": {
+      "name": "Belarus",
+      "areaCode": {},
+      "zones": [
+        "Europe/Minsk"
+      ]
+    },
+    "BZ": {
+      "name": "Belize",
+      "areaCode": {},
+      "zones": [
+        "America/Belize"
+      ]
+    },
+    "CA": {
+      "name": "Canada",
+      "areaCode": {
+        "403": {
+          "name": "Alberta",
+          "timezone": "America/Edmonton"
+        },
+        "587": {
+          "name": "Alberta",
+          "timezone": "America/Edmonton"
+        },
+        "780": {
+          "name": "Alberta",
+          "timezone": "America/Edmonton"
+        },
+        "825": {
+          "name": "Alberta",
+          "timezone": "America/Edmonton"
+        },
+        "236": {
+          "name": "British Columbia",
+          "timezone": "America/Vancouver"
+        },
+        "778": {
+          "name": "British Columbia",
+          "timezone": "America/Vancouver"
+        },
+        "250": {
+          "name": "British Columbia",
+          "timezone": "America/Vancouver"
+        },
+        "604": {
+          "name": "British Columbia",
+          "timezone": "America/Vancouver"
+        },
+        "431": {
+          "name": "Manitoba",
+          "timezone": "America/Winnipeg"
+        },
+        "204": {
+          "name": "Manitoba",
+          "timezone": "America/Winnipeg"
+        },
+        "506": {
+          "name": "New Brunswick",
+          "timezone": "America/St_Johns"
+        },
+        "709": {
+          "name": "Newfoundland",
+          "timezone": "America/St_Johns"
+        },
+        "867": {
+          "name": "Northwest Territories",
+          "timezone": "America/Inuvik"
+        },
+        "902": {
+          "name": "Nova Scotia",
+          "timezone": "America/Halifax"
+        },
+        "867": {
+          "name": "Nunavut",
+          "timezone": "America/Cambridge_Bay"
+        },
+        "226": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "289": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "613": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "807": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "437": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "249": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "343": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "416": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "519": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "647": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "905": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "365": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "548": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "705": {
+          "name": "Ontario",
+          "timezone": "America/Toronto"
+        },
+        "782": {
+          "name": "Prince Edward Island",
+          "timezone": "America/Bahia"
+        },
+        "902": {
+          "name": "Prince Edward Island",
+          "timezone": "America/Bahia"
+        },
+        "367": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "579": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "873": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "514": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "581": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "819": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "438": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "418": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "450": {
+          "name": "Quebec",
+          "timezone": "America/New_York"
+        },
+        "306": {
+          "name": "Saskatchewan",
+          "timezone": "America/Regina"
+        },
+        "639": {
+          "name": "Saskatchewan",
+          "timezone": "America/Regina"
+        },
+        "867": {
+          "name": "Yukon",
+          "timezone": "America/Whitehorse"
+        }
+      },
+      "zones": [
+        "America/St_Johns",
+        "America/Halifax",
+        "America/Glace_Bay",
+        "America/Moncton",
+        "America/Goose_Bay",
+        "America/Blanc-Sablon",
+        "America/Toronto",
+        "America/Nipigon",
+        "America/Thunder_Bay",
+        "America/Iqaluit",
+        "America/Pangnirtung",
+        "America/Atikokan",
+        "America/Winnipeg",
+        "America/Rainy_River",
+        "America/Resolute",
+        "America/Rankin_Inlet",
+        "America/Regina",
+        "America/Swift_Current",
+        "America/Edmonton",
+        "America/Cambridge_Bay",
+        "America/Yellowknife",
+        "America/Inuvik",
+        "America/Creston",
+        "America/Dawson_Creek",
+        "America/Fort_Nelson",
+        "America/Vancouver",
+        "America/Whitehorse",
+        "America/Dawson"
+      ]
+    },
+    "CC": {
+      "name": "Cocos (Keeling) Islands",
+      "areaCode": {},
+      "zones": [
+        "Indian/Cocos"
+      ]
+    },
+    "CD": {
+      "name": "Congo (Dem. Rep.)",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo",
+        "Africa/Lagos"
+      ]
+    },
+    "CF": {
+      "name": "Central African Rep.",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "CG": {
+      "name": "Congo (Rep.)",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "CH": {
+      "name": "Switzerland",
+      "areaCode": {},
+      "zones": [
+        "Europe/Zurich"
+      ]
+    },
+    "CI": {
+      "name": "Côte d'Ivoire",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "CK": {
+      "name": "Cook Islands",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Rarotonga"
+      ]
+    },
+    "CL": {
+      "name": "Chile",
+      "areaCode": {},
+      "zones": [
+        "America/Santiago",
+        "America/Punta_Arenas",
+        "Pacific/Easter"
+      ]
+    },
+    "CM": {
+      "name": "Cameroon",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "CN": {
+      "name": "China",
+      "areaCode": {},
+      "zones": [
+        "Asia/Shanghai",
+        "Asia/Urumqi"
+      ]
+    },
+    "CO": {
+      "name": "Colombia",
+      "areaCode": {},
+      "zones": [
+        "America/Bogota"
+      ]
+    },
+    "CR": {
+      "name": "Costa Rica",
+      "areaCode": {},
+      "zones": [
+        "America/Costa_Rica"
+      ]
+    },
+    "CU": {
+      "name": "Cuba",
+      "areaCode": {},
+      "zones": [
+        "America/Havana"
+      ]
+    },
+    "CV": {
+      "name": "Cape Verde",
+      "areaCode": {},
+      "zones": [
+        "Atlantic/Cape_Verde"
+      ]
+    },
+    "CW": {
+      "name": "Curaçao",
+      "areaCode": {},
+      "zones": [
+        "America/Curacao"
+      ]
+    },
+    "CX": {
+      "name": "Christmas Island",
+      "areaCode": {},
+      "zones": [
+        "Indian/Christmas"
+      ]
+    },
+    "CY": {
+      "name": "Cyprus",
+      "areaCode": {},
+      "zones": [
+        "Asia/Nicosia",
+        "Asia/Famagusta"
+      ]
+    },
+    "CZ": {
+      "name": "Czech Republic",
+      "areaCode": {},
+      "zones": [
+        "Europe/Prague"
+      ]
+    },
+    "DE": {
+      "name": "Germany",
+      "areaCode": {},
+      "zones": [
+        "Europe/Zurich",
+        "Europe/Berlin"
+      ]
+    },
+    "DJ": {
+      "name": "Djibouti",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "DK": {
+      "name": "Denmark",
+      "areaCode": {},
+      "zones": [
+        "Europe/Copenhagen"
+      ]
+    },
+    "DM": {
+      "name": "Dominica",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "DO": {
+      "name": "Dominican Republic",
+      "areaCode": {},
+      "zones": [
+        "America/Santo_Domingo"
+      ]
+    },
+    "DZ": {
+      "name": "Algeria",
+      "areaCode": {},
+      "zones": [
+        "Africa/Algiers"
+      ]
+    },
+    "EC": {
+      "name": "Ecuador",
+      "areaCode": {},
+      "zones": [
+        "America/Guayaquil",
+        "Pacific/Galapagos"
+      ]
+    },
+    "EE": {
+      "name": "Estonia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Tallinn"
+      ]
+    },
+    "EG": {
+      "name": "Egypt",
+      "areaCode": {},
+      "zones": [
+        "Africa/Cairo"
+      ]
+    },
+    "EH": {
+      "name": "Western Sahara",
+      "areaCode": {},
+      "zones": [
+        "Africa/El_Aaiun"
+      ]
+    },
+    "ER": {
+      "name": "Eritrea",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "ES": {
+      "name": "Spain",
+      "areaCode": {},
+      "zones": [
+        "Europe/Madrid",
+        "Africa/Ceuta",
+        "Atlantic/Canary"
+      ]
+    },
+    "ET": {
+      "name": "Ethiopia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "FI": {
+      "name": "Finland",
+      "areaCode": {},
+      "zones": [
+        "Europe/Helsinki"
+      ]
+    },
+    "FJ": {
+      "name": "Fiji",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Fiji"
+      ]
+    },
+    "FK": {
+      "name": "Falkland Islands",
+      "areaCode": {},
+      "zones": [
+        "Atlantic/Stanley"
+      ]
+    },
+    "FM": {
+      "name": "Micronesia",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Chuuk",
+        "Pacific/Pohnpei",
+        "Pacific/Kosrae"
+      ]
+    },
+    "FO": {
+      "name": "Faroe Islands",
+      "areaCode": {},
+      "zones": [
+        "Atlantic/Faroe"
+      ]
+    },
+    "FR": {
+      "name": "France",
+      "areaCode": {},
+      "zones": [
+        "Europe/Paris"
+      ]
+    },
+    "GA": {
+      "name": "Gabon",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "areaCode": {},
+      "zones": [
+        "Europe/London"
+      ]
+    },
+    "GD": {
+      "name": "Grenada",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "GE": {
+      "name": "Georgia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Tbilisi"
+      ]
+    },
+    "GF": {
+      "name": "French Guiana",
+      "areaCode": {},
+      "zones": [
+        "America/Cayenne"
+      ]
+    },
+    "GG": {
+      "name": "Guernsey",
+      "areaCode": {},
+      "zones": [
+        "Europe/London"
+      ]
+    },
+    "GH": {
+      "name": "Ghana",
+      "areaCode": {},
+      "zones": [
+        "Africa/Accra"
+      ]
+    },
+    "GI": {
+      "name": "Gibraltar",
+      "areaCode": {},
+      "zones": [
+        "Europe/Gibraltar"
+      ]
+    },
+    "GL": {
+      "name": "Greenland",
+      "areaCode": {},
+      "zones": [
+        "America/Godthab",
+        "America/Danmarkshavn",
+        "America/Scoresbysund",
+        "America/Thule"
+      ]
+    },
+    "GM": {
+      "name": "Gambia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "GN": {
+      "name": "Guinea",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "GP": {
+      "name": "Guadeloupe",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "GQ": {
+      "name": "Equatorial Guinea",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "GR": {
+      "name": "Greece",
+      "areaCode": {},
+      "zones": [
+        "Europe/Athens"
+      ]
+    },
+    "GS": {
+      "name": "South Georgia & the South Sandwich Islands",
+      "areaCode": {},
+      "zones": [
+        "Atlantic/South_Georgia"
+      ]
+    },
+    "GT": {
+      "name": "Guatemala",
+      "areaCode": {},
+      "zones": [
+        "America/Guatemala"
+      ]
+    },
+    "GU": {
+      "name": "Guam",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Guam"
+      ]
+    },
+    "GW": {
+      "name": "Guinea-Bissau",
+      "areaCode": {},
+      "zones": [
+        "Africa/Bissau"
+      ]
+    },
+    "GY": {
+      "name": "Guyana",
+      "areaCode": {},
+      "zones": [
+        "America/Guyana"
+      ]
+    },
+    "HK": {
+      "name": "Hong Kong",
+      "areaCode": {},
+      "zones": [
+        "Asia/Hong_Kong"
+      ]
+    },
+    "HN": {
+      "name": "Honduras",
+      "areaCode": {},
+      "zones": [
+        "America/Tegucigalpa"
+      ]
+    },
+    "HR": {
+      "name": "Croatia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Belgrade"
+      ]
+    },
+    "HT": {
+      "name": "Haiti",
+      "areaCode": {},
+      "zones": [
+        "America/Port-au-Prince"
+      ]
+    },
+    "HU": {
+      "name": "Hungary",
+      "areaCode": {},
+      "zones": [
+        "Europe/Budapest"
+      ]
+    },
+    "ID": {
+      "name": "Indonesia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Jakarta",
+        "Asia/Pontianak",
+        "Asia/Makassar",
+        "Asia/Jayapura"
+      ]
+    },
+    "IE": {
+      "name": "Ireland",
+      "areaCode": {},
+      "zones": [
+        "Europe/Dublin"
+      ]
+    },
+    "IL": {
+      "name": "Israel",
+      "areaCode": {},
+      "zones": [
+        "Asia/Jerusalem"
+      ]
+    },
+    "IM": {
+      "name": "Isle of Man",
+      "areaCode": {},
+      "zones": [
+        "Europe/London"
+      ]
+    },
+    "IN": {
+      "name": "India",
+      "areaCode": {},
+      "zones": [
+        "Asia/Kolkata"
+      ]
+    },
+    "IO": {
+      "name": "British Indian Ocean Territory",
+      "areaCode": {},
+      "zones": [
+        "Indian/Chagos"
+      ]
+    },
+    "IQ": {
+      "name": "Iraq",
+      "areaCode": {},
+      "zones": [
+        "Asia/Baghdad"
+      ]
+    },
+    "IR": {
+      "name": "Iran",
+      "areaCode": {},
+      "zones": [
+        "Asia/Tehran"
+      ]
+    },
+    "IS": {
+      "name": "Iceland",
+      "areaCode": {},
+      "zones": [
+        "Atlantic/Reykjavik"
+      ]
+    },
+    "IT": {
+      "name": "Italy",
+      "areaCode": {},
+      "zones": [
+        "Europe/Rome"
+      ]
+    },
+    "JE": {
+      "name": "Jersey",
+      "areaCode": {},
+      "zones": [
+        "Europe/London"
+      ]
+    },
+    "JM": {
+      "name": "Jamaica",
+      "areaCode": {},
+      "zones": [
+        "America/Jamaica"
+      ]
+    },
+    "JO": {
+      "name": "Jordan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Amman"
+      ]
+    },
+    "JP": {
+      "name": "Japan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Tokyo"
+      ]
+    },
+    "KE": {
+      "name": "Kenya",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "KG": {
+      "name": "Kyrgyzstan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Bishkek"
+      ]
+    },
+    "KH": {
+      "name": "Cambodia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Bangkok"
+      ]
+    },
+    "KI": {
+      "name": "Kiribati",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Tarawa",
+        "Pacific/Enderbury",
+        "Pacific/Kiritimati"
+      ]
+    },
+    "KM": {
+      "name": "Comoros",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "KN": {
+      "name": "St Kitts & Nevis",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "KP": {
+      "name": "Korea (North)",
+      "areaCode": {},
+      "zones": [
+        "Asia/Pyongyang"
+      ]
+    },
+    "KR": {
+      "name": "Korea (South)",
+      "areaCode": {},
+      "zones": [
+        "Asia/Seoul"
+      ]
+    },
+    "KW": {
+      "name": "Kuwait",
+      "areaCode": {},
+      "zones": [
+        "Asia/Riyadh"
+      ]
+    },
+    "KY": {
+      "name": "Cayman Islands",
+      "areaCode": {},
+      "zones": [
+        "America/Panama"
+      ]
+    },
+    "KZ": {
+      "name": "Kazakhstan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Almaty",
+        "Asia/Qyzylorda",
+        "Asia/Aqtobe",
+        "Asia/Aqtau",
+        "Asia/Atyrau",
+        "Asia/Oral"
+      ]
+    },
+    "LA": {
+      "name": "Laos",
+      "areaCode": {},
+      "zones": [
+        "Asia/Bangkok"
+      ]
+    },
+    "LB": {
+      "name": "Lebanon",
+      "areaCode": {},
+      "zones": [
+        "Asia/Beirut"
+      ]
+    },
+    "LC": {
+      "name": "St Lucia",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "LI": {
+      "name": "Liechtenstein",
+      "areaCode": {},
+      "zones": [
+        "Europe/Zurich"
+      ]
+    },
+    "LK": {
+      "name": "Sri Lanka",
+      "areaCode": {},
+      "zones": [
+        "Asia/Colombo"
+      ]
+    },
+    "LR": {
+      "name": "Liberia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Monrovia"
+      ]
+    },
+    "LS": {
+      "name": "Lesotho",
+      "areaCode": {},
+      "zones": [
+        "Africa/Johannesburg"
+      ]
+    },
+    "LT": {
+      "name": "Lithuania",
+      "areaCode": {},
+      "zones": [
+        "Europe/Vilnius"
+      ]
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "areaCode": {},
+      "zones": [
+        "Europe/Luxembourg"
+      ]
+    },
+    "LV": {
+      "name": "Latvia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Riga"
+      ]
+    },
+    "LY": {
+      "name": "Libya",
+      "areaCode": {},
+      "zones": [
+        "Africa/Tripoli"
+      ]
+    },
+    "MA": {
+      "name": "Morocco",
+      "areaCode": {},
+      "zones": [
+        "Africa/Casablanca"
+      ]
+    },
+    "MC": {
+      "name": "Monaco",
+      "areaCode": {},
+      "zones": [
+        "Europe/Monaco"
+      ]
+    },
+    "MD": {
+      "name": "Moldova",
+      "areaCode": {},
+      "zones": [
+        "Europe/Chisinau"
+      ]
+    },
+    "ME": {
+      "name": "Montenegro",
+      "areaCode": {},
+      "zones": [
+        "Europe/Belgrade"
+      ]
+    },
+    "MF": {
+      "name": "St Martin (French)",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "MG": {
+      "name": "Madagascar",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "MH": {
+      "name": "Marshall Islands",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Majuro",
+        "Pacific/Kwajalein"
+      ]
+    },
+    "MK": {
+      "name": "Macedonia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Belgrade"
+      ]
+    },
+    "ML": {
+      "name": "Mali",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "MM": {
+      "name": "Myanmar (Burma)",
+      "areaCode": {},
+      "zones": [
+        "Asia/Yangon"
+      ]
+    },
+    "MN": {
+      "name": "Mongolia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Ulaanbaatar",
+        "Asia/Hovd",
+        "Asia/Choibalsan"
+      ]
+    },
+    "MO": {
+      "name": "Macau",
+      "areaCode": {},
+      "zones": [
+        "Asia/Macau"
+      ]
+    },
+    "MP": {
+      "name": "Northern Mariana Islands",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Guam"
+      ]
+    },
+    "MQ": {
+      "name": "Martinique",
+      "areaCode": {},
+      "zones": [
+        "America/Martinique"
+      ]
+    },
+    "MR": {
+      "name": "Mauritania",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "MS": {
+      "name": "Montserrat",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "MT": {
+      "name": "Malta",
+      "areaCode": {},
+      "zones": [
+        "Europe/Malta"
+      ]
+    },
+    "MU": {
+      "name": "Mauritius",
+      "areaCode": {},
+      "zones": [
+        "Indian/Mauritius"
+      ]
+    },
+    "MV": {
+      "name": "Maldives",
+      "areaCode": {},
+      "zones": [
+        "Indian/Maldives"
+      ]
+    },
+    "MW": {
+      "name": "Malawi",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "MX": {
+      "name": "Mexico",
+      "areaCode": {},
+      "zones": [
+        "America/Mexico_City",
+        "America/Cancun",
+        "America/Merida",
+        "America/Monterrey",
+        "America/Matamoros",
+        "America/Mazatlan",
+        "America/Chihuahua",
+        "America/Ojinaga",
+        "America/Hermosillo",
+        "America/Tijuana",
+        "America/Bahia_Banderas"
+      ]
+    },
+    "MY": {
+      "name": "Malaysia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Kuala_Lumpur",
+        "Asia/Kuching"
+      ]
+    },
+    "MZ": {
+      "name": "Mozambique",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "NA": {
+      "name": "Namibia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Windhoek"
+      ]
+    },
+    "NC": {
+      "name": "New Caledonia",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Noumea"
+      ]
+    },
+    "NE": {
+      "name": "Niger",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "NF": {
+      "name": "Norfolk Island",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Norfolk"
+      ]
+    },
+    "NG": {
+      "name": "Nigeria",
+      "areaCode": {},
+      "zones": [
+        "Africa/Lagos"
+      ]
+    },
+    "NI": {
+      "name": "Nicaragua",
+      "areaCode": {},
+      "zones": [
+        "America/Managua"
+      ]
+    },
+    "NL": {
+      "name": "Netherlands",
+      "areaCode": {},
+      "zones": [
+        "Europe/Amsterdam"
+      ]
+    },
+    "NO": {
+      "name": "Norway",
+      "areaCode": {},
+      "zones": [
+        "Europe/Oslo"
+      ]
+    },
+    "NP": {
+      "name": "Nepal",
+      "areaCode": {},
+      "zones": [
+        "Asia/Kathmandu"
+      ]
+    },
+    "NR": {
+      "name": "Nauru",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Nauru"
+      ]
+    },
+    "NU": {
+      "name": "Niue",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Niue"
+      ]
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Auckland",
+        "Pacific/Chatham"
+      ]
+    },
+    "OM": {
+      "name": "Oman",
+      "areaCode": {},
+      "zones": [
+        "Asia/Dubai"
+      ]
+    },
+    "PA": {
+      "name": "Panama",
+      "areaCode": {},
+      "zones": [
+        "America/Panama"
+      ]
+    },
+    "PE": {
+      "name": "Peru",
+      "areaCode": {},
+      "zones": [
+        "America/Lima"
+      ]
+    },
+    "PF": {
+      "name": "French Polynesia",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Tahiti",
+        "Pacific/Marquesas",
+        "Pacific/Gambier"
+      ]
+    },
+    "PG": {
+      "name": "Papua New Guinea",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Port_Moresby",
+        "Pacific/Bougainville"
+      ]
+    },
+    "PH": {
+      "name": "Philippines",
+      "areaCode": {},
+      "zones": [
+        "Asia/Manila"
+      ]
+    },
+    "PK": {
+      "name": "Pakistan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Karachi"
+      ]
+    },
+    "PL": {
+      "name": "Poland",
+      "areaCode": {},
+      "zones": [
+        "Europe/Warsaw"
+      ]
+    },
+    "PM": {
+      "name": "St Pierre & Miquelon",
+      "areaCode": {},
+      "zones": [
+        "America/Miquelon"
+      ]
+    },
+    "PN": {
+      "name": "Pitcairn",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Pitcairn"
+      ]
+    },
+    "PR": {
+      "name": "Puerto Rico",
+      "areaCode": {},
+      "zones": [
+        "America/Puerto_Rico"
+      ]
+    },
+    "PS": {
+      "name": "Palestine",
+      "areaCode": {},
+      "zones": [
+        "Asia/Gaza",
+        "Asia/Hebron"
+      ]
+    },
+    "PT": {
+      "name": "Portugal",
+      "areaCode": {},
+      "zones": [
+        "Europe/Lisbon",
+        "Atlantic/Madeira",
+        "Atlantic/Azores"
+      ]
+    },
+    "PW": {
+      "name": "Palau",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Palau"
+      ]
+    },
+    "PY": {
+      "name": "Paraguay",
+      "areaCode": {},
+      "zones": [
+        "America/Asuncion"
+      ]
+    },
+    "QA": {
+      "name": "Qatar",
+      "areaCode": {},
+      "zones": [
+        "Asia/Qatar"
+      ]
+    },
+    "RE": {
+      "name": "Réunion",
+      "areaCode": {},
+      "zones": [
+        "Indian/Reunion"
+      ]
+    },
+    "RO": {
+      "name": "Romania",
+      "areaCode": {},
+      "zones": [
+        "Europe/Bucharest"
+      ]
+    },
+    "RS": {
+      "name": "Serbia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Belgrade"
+      ]
+    },
+    "RU": {
+      "name": "Russia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Kaliningrad",
+        "Europe/Moscow",
+        "Europe/Simferopol",
+        "Europe/Volgograd",
+        "Europe/Kirov",
+        "Europe/Astrakhan",
+        "Europe/Saratov",
+        "Europe/Ulyanovsk",
+        "Europe/Samara",
+        "Asia/Yekaterinburg",
+        "Asia/Omsk",
+        "Asia/Novosibirsk",
+        "Asia/Barnaul",
+        "Asia/Tomsk",
+        "Asia/Novokuznetsk",
+        "Asia/Krasnoyarsk",
+        "Asia/Irkutsk",
+        "Asia/Chita",
+        "Asia/Yakutsk",
+        "Asia/Khandyga",
+        "Asia/Vladivostok",
+        "Asia/Ust-Nera",
+        "Asia/Magadan",
+        "Asia/Sakhalin",
+        "Asia/Srednekolymsk",
+        "Asia/Kamchatka",
+        "Asia/Anadyr"
+      ]
+    },
+    "RW": {
+      "name": "Rwanda",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "areaCode": {},
+      "zones": [
+        "Asia/Riyadh"
+      ]
+    },
+    "SB": {
+      "name": "Solomon Islands",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Guadalcanal"
+      ]
+    },
+    "SC": {
+      "name": "Seychelles",
+      "areaCode": {},
+      "zones": [
+        "Indian/Mahe"
+      ]
+    },
+    "SD": {
+      "name": "Sudan",
+      "areaCode": {},
+      "zones": [
+        "Africa/Khartoum"
+      ]
+    },
+    "SE": {
+      "name": "Sweden",
+      "areaCode": {},
+      "zones": [
+        "Europe/Stockholm"
+      ]
+    },
+    "SG": {
+      "name": "Singapore",
+      "areaCode": {},
+      "zones": [
+        "Asia/Singapore"
+      ]
+    },
+    "SH": {
+      "name": "St Helena",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "SI": {
+      "name": "Slovenia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Belgrade"
+      ]
+    },
+    "SJ": {
+      "name": "Svalbard & Jan Mayen",
+      "areaCode": {},
+      "zones": [
+        "Europe/Oslo"
+      ]
+    },
+    "SK": {
+      "name": "Slovakia",
+      "areaCode": {},
+      "zones": [
+        "Europe/Prague"
+      ]
+    },
+    "SL": {
+      "name": "Sierra Leone",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "SM": {
+      "name": "San Marino",
+      "areaCode": {},
+      "zones": [
+        "Europe/Rome"
+      ]
+    },
+    "SN": {
+      "name": "Senegal",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "SO": {
+      "name": "Somalia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "SR": {
+      "name": "Suriname",
+      "areaCode": {},
+      "zones": [
+        "America/Paramaribo"
+      ]
+    },
+    "SS": {
+      "name": "South Sudan",
+      "areaCode": {},
+      "zones": [
+        "Africa/Khartoum"
+      ]
+    },
+    "ST": {
+      "name": "Sao Tome & Principe",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "SV": {
+      "name": "El Salvador",
+      "areaCode": {},
+      "zones": [
+        "America/El_Salvador"
+      ]
+    },
+    "SX": {
+      "name": "St Maarten (Dutch)",
+      "areaCode": {},
+      "zones": [
+        "America/Curacao"
+      ]
+    },
+    "SY": {
+      "name": "Syria",
+      "areaCode": {},
+      "zones": [
+        "Asia/Damascus"
+      ]
+    },
+    "SZ": {
+      "name": "Swaziland",
+      "areaCode": {},
+      "zones": [
+        "Africa/Johannesburg"
+      ]
+    },
+    "TC": {
+      "name": "Turks & Caicos Is",
+      "areaCode": {},
+      "zones": [
+        "America/Grand_Turk"
+      ]
+    },
+    "TD": {
+      "name": "Chad",
+      "areaCode": {},
+      "zones": [
+        "Africa/Ndjamena"
+      ]
+    },
+    "TF": {
+      "name": "French Southern & Antarctic Lands",
+      "areaCode": {},
+      "zones": [
+        "Indian/Reunion",
+        "Indian/Kerguelen"
+      ]
+    },
+    "TG": {
+      "name": "Togo",
+      "areaCode": {},
+      "zones": [
+        "Africa/Abidjan"
+      ]
+    },
+    "TH": {
+      "name": "Thailand",
+      "areaCode": {},
+      "zones": [
+        "Asia/Bangkok"
+      ]
+    },
+    "TJ": {
+      "name": "Tajikistan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Dushanbe"
+      ]
+    },
+    "TK": {
+      "name": "Tokelau",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Fakaofo"
+      ]
+    },
+    "TL": {
+      "name": "East Timor",
+      "areaCode": {},
+      "zones": [
+        "Asia/Dili"
+      ]
+    },
+    "TM": {
+      "name": "Turkmenistan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Ashgabat"
+      ]
+    },
+    "TN": {
+      "name": "Tunisia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Tunis"
+      ]
+    },
+    "TO": {
+      "name": "Tonga",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Tongatapu"
+      ]
+    },
+    "TR": {
+      "name": "Turkey",
+      "areaCode": {},
+      "zones": [
+        "Europe/Istanbul"
+      ]
+    },
+    "TT": {
+      "name": "Trinidad & Tobago",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "TV": {
+      "name": "Tuvalu",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Funafuti"
+      ]
+    },
+    "TW": {
+      "name": "Taiwan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Taipei"
+      ]
+    },
+    "TZ": {
+      "name": "Tanzania",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "UA": {
+      "name": "Ukraine",
+      "areaCode": {},
+      "zones": [
+        "Europe/Kiev",
+        "Europe/Uzhgorod",
+        "Europe/Zaporozhye"
+      ]
+    },
+    "UG": {
+      "name": "Uganda",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "UM": {
+      "name": "US minor outlying islands",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Pago_Pago",
+        "Pacific/Wake",
+        "Pacific/Honolulu"
+      ]
+    },
+    "US": {
+      "name": "United States",
+      "areaCode": {
+        "210": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "214": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "254": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "281": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "325": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "346": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "361": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "409": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "430": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "432": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "469": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "512": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "682": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "713": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "726": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "737": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "806": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "817": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "830": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "832": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "903": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "915": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "936": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "940": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "956": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "972": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "979": {
+          "name": "texas",
+          "timezone": "America/Chicago"
+        },
+        "205": {
+          "name": "alabama",
+          "timezone": "America/Chicago"
+        },
+        "251": {
+          "name": "alabama",
+          "timezone": "America/Chicago"
+        },
+        "256": {
+          "name": "alabama",
+          "timezone": "America/Chicago"
+        },
+        "334": {
+          "name": "alabama",
+          "timezone": "America/Chicago"
+        },
+        "938": {
+          "name": "alabama",
+          "timezone": "America/Chicago"
+        },
+        "228": {
+          "name": "Mississippi",
+          "timezone": "America/Chicago"
+        },
+        "601": {
+          "name": "Mississippi",
+          "timezone": "America/Chicago"
+        },
+        "662": {
+          "name": "Mississippi",
+          "timezone": "America/Chicago"
+        },
+        "769": {
+          "name": "Mississippi",
+          "timezone": "America/Chicago"
+        },
+        "670": {
+          "name": "Northern Mariana Islands",
+          "timezone": "Australia/Melbourne"
+        },
+        "405": {
+          "name": "Oklahoma",
+          "timezone": "America/Chicago"
+        },
+        "539": {
+          "name": "Oklahoma",
+          "timezone": "America/Chicago"
+        },
+        "580": {
+          "name": "Oklahoma",
+          "timezone": "America/Chicago"
+        },
+        "918": {
+          "name": "Oklahoma",
+          "timezone": "America/Chicago"
+        },
+        "302": {
+          "name": "Delaware",
+          "timezone": "America/New_York"
+        },
+        "218": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "320": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "507": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "612": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "651": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "763": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "952": {
+          "name": "Minnesota",
+          "timezone": "America/Chicago"
+        },
+        "217": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "224": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "309": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "312": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "331": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "618": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "630": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "708": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "773": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "779": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "815": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "847": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "872": {
+          "name": "Illinois",
+          "timezone": "America/Chicago"
+        },
+        "479": {
+          "name": "Arkansas",
+          "timezone": "America/Chicago"
+        },
+        "501": {
+          "name": "Arkansas",
+          "timezone": "America/Chicago"
+        },
+        "870": {
+          "name": "Arkansas",
+          "timezone": "America/Chicago"
+        },
+        "505": {
+          "name": "New Mexico",
+          "timezone": "America/Mexico_City"
+        },
+        "575": {
+          "name": "New Mexico",
+          "timezone": "America/Mexico_City"
+        },
+        "219": {
+          "name": "Indiana",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "260": {
+          "name": "Indiana",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "317": {
+          "name": "Indiana",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "574": {
+          "name": "Indiana",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "765": {
+          "name": "Indiana",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "812": {
+          "name": "Indiana",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "240": {
+          "name": "Maryland",
+          "timezone": "America/New_York"
+        },
+        "301": {
+          "name": "Maryland",
+          "timezone": "America/New_York"
+        },
+        "410": {
+          "name": "Maryland",
+          "timezone": "America/New_York"
+        },
+        "443": {
+          "name": "Maryland",
+          "timezone": "America/New_York"
+        },
+        "667": {
+          "name": "Maryland",
+          "timezone": "America/New_York"
+        },
+        "225": {
+          "name": "Louisiana",
+          "timezone": "America/Chicago"
+        },
+        "318": {
+          "name": "Louisiana",
+          "timezone": "America/Chicago"
+        },
+        "337": {
+          "name": "Louisiana",
+          "timezone": "America/Chicago"
+        },
+        "504": {
+          "name": "Louisiana",
+          "timezone": "America/Chicago"
+        },
+        "985": {
+          "name": "Louisiana",
+          "timezone": "America/Chicago"
+        },
+        "208": {
+          "name": "Idaho",
+          "timezone": "America/Los_Angeles"
+        },
+        "307": {
+          "name": "Wyoming",
+          "timezone": "America/Denver"
+        },
+        "423": {
+          "name": "Tennessee",
+          "timezone": "America/New_York"
+        },
+        "615": {
+          "name": "Tennessee",
+          "timezone": "America/New_York"
+        },
+        "731": {
+          "name": "Tennessee",
+          "timezone": "America/New_York"
+        },
+        "865": {
+          "name": "Tennessee",
+          "timezone": "America/New_York"
+        },
+        "901": {
+          "name": "Tennessee",
+          "timezone": "America/New_York"
+        },
+        "931": {
+          "name": "Tennessee",
+          "timezone": "America/New_York"
+        },
+        "480": {
+          "name": "Arizona",
+          "timezone": "America/Phoenix"
+        },
+        "520": {
+          "name": "Arizona",
+          "timezone": "America/Phoenix"
+        },
+        "602": {
+          "name": "Arizona",
+          "timezone": "America/Phoenix"
+        },
+        "623": {
+          "name": "Arizona",
+          "timezone": "America/Phoenix"
+        },
+        "928": {
+          "name": "Arizona",
+          "timezone": "America/Phoenix"
+        },
+        "319": {
+          "name": "Iowa",
+          "timezone": "America/Chicago"
+        },
+        "515": {
+          "name": "Iowa",
+          "timezone": "America/Chicago"
+        },
+        "563": {
+          "name": "Iowa",
+          "timezone": "America/Chicago"
+        },
+        "641": {
+          "name": "Iowa",
+          "timezone": "America/Chicago"
+        },
+        "712": {
+          "name": "Iowa",
+          "timezone": "America/Chicago"
+        },
+        "231": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "248": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "269": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "313": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "517": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "586": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "616": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "734": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "810": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "906": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "947": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "989": {
+          "name": "Michigan",
+          "timezone": "America/New_York"
+        },
+        "316": {
+          "name": "Kansas",
+          "timezone": "America/Chicago"
+        },
+        "620": {
+          "name": "Kansas",
+          "timezone": "America/Chicago"
+        },
+        "785": {
+          "name": "Kansas",
+          "timezone": "America/Chicago"
+        },
+        "913": {
+          "name": "Kansas",
+          "timezone": "America/Chicago"
+        },
+        "385": {
+          "name": "Utah",
+          "timezone": "America/Denver"
+        },
+        "435": {
+          "name": "Utah",
+          "timezone": "America/Denver"
+        },
+        "801": {
+          "name": "Utah",
+          "timezone": "America/Denver"
+        },
+        "684": {
+          "name": "American Samoa",
+          "timezone": "Pacific/Midway"
+        },
+        "458": {
+          "name": "Oregon",
+          "timezone": "America/Los_Angeles"
+        },
+        "503": {
+          "name": "Oregon",
+          "timezone": "America/Los_Angeles"
+        },
+        "541": {
+          "name": "Oregon",
+          "timezone": "America/Los_Angeles"
+        },
+        "971": {
+          "name": "Oregon",
+          "timezone": "America/Los_Angeles"
+        },
+        "203": {
+          "name": "Connecticut",
+          "timezone": "America/New_York"
+        },
+        "475": {
+          "name": "Connecticut",
+          "timezone": "America/New_York"
+        },
+        "860": {
+          "name": "Connecticut",
+          "timezone": "America/New_York"
+        },
+        "406": {
+          "name": "Montana",
+          "timezone": "America/Denver"
+        },
+        "209": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "213": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "310": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "323": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "408": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "415": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "424": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "442": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "510": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "530": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "559": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "562": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "619": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "626": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "650": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "657": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "661": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "669": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "707": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "714": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "747": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "760": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "805": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "818": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "831": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "858": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "909": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "916": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "925": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "949": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "951": {
+          "name": "California",
+          "timezone": "America/Los_Angeles"
+        },
+        "339": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "351": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "413": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "508": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "617": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "774": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "781": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "857": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "978": {
+          "name": "Massachusetts",
+          "timezone": "America/New_York"
+        },
+        "787": {
+          "name": "Puerto Rico",
+          "timezone": "America/Santiago"
+        },
+        "939": {
+          "name": "Puerto Rico",
+          "timezone": "America/Santiago"
+        },
+        "803": {
+          "name": "South Carolina",
+          "timezone": "America/New_York"
+        },
+        "843": {
+          "name": "South Carolina",
+          "timezone": "America/New_York"
+        },
+        "864": {
+          "name": "South Carolina",
+          "timezone": "America/New_York"
+        },
+        "603": {
+          "name": "New Hampshire",
+          "timezone": "America/New_York"
+        },
+        "262": {
+          "name": "Wisconsin",
+          "timezone": "America/Chicago"
+        },
+        "414": {
+          "name": "Wisconsin",
+          "timezone": "America/Chicago"
+        },
+        "534": {
+          "name": "Wisconsin",
+          "timezone": "America/Chicago"
+        },
+        "608": {
+          "name": "Wisconsin",
+          "timezone": "America/Chicago"
+        },
+        "715": {
+          "name": "Wisconsin",
+          "timezone": "America/Chicago"
+        },
+        "920": {
+          "name": "Wisconsin",
+          "timezone": "America/Chicago"
+        },
+        "802": {
+          "name": "Vermont",
+          "timezone": "America/New_York"
+        },
+        "229": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "404": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "470": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "478": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "678": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "706": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "762": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "770": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "912": {
+          "name": "Georgia",
+          "timezone": "America/New_York"
+        },
+        "701": {
+          "name": "North Dakota",
+          "timezone": "America/Chicago"
+        },
+        "82": {
+          "name": "Nova Scotia",
+          "timezone": "America/Halifax"
+        },
+        "215": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "267": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "272": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "412": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "484": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "570": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "610": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "717": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "724": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "814": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "878": {
+          "name": "Pennsylvania",
+          "timezone": "America/New_York"
+        },
+        "304": {
+          "name": "West Virginia",
+          "timezone": "America/New_York"
+        },
+        "681": {
+          "name": "West Virginia",
+          "timezone": "America/New_York"
+        },
+        "239": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "305": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "321": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "352": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "386": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "407": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "561": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "727": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "754": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "772": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "786": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "813": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "850": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "863": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "904": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "941": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "954": {
+          "name": "Florida",
+          "timezone": "America/Manaus"
+        },
+        "808": {
+          "name": "Hawaii",
+          "timezone": "Pacific/Honolulu"
+        },
+        "270": {
+          "name": "Kentucky",
+          "timezone": "America/New_York"
+        },
+        "502": {
+          "name": "Kentucky",
+          "timezone": "America/New_York"
+        },
+        "606": {
+          "name": "Kentucky",
+          "timezone": "America/New_York"
+        },
+        "859": {
+          "name": "Kentucky",
+          "timezone": "America/New_York"
+        },
+        "907": {
+          "name": "Alaska",
+          "timezone": "America/Anchorage"
+        },
+        "308": {
+          "name": "Nebraska",
+          "timezone": "America/Chicago"
+        },
+        "402": {
+          "name": "Nebraska",
+          "timezone": "America/Chicago"
+        },
+        "531": {
+          "name": "Nebraska",
+          "timezone": "America/Chicago"
+        },
+        "314": {
+          "name": "Missouri",
+          "timezone": "America/Chicago"
+        },
+        "417": {
+          "name": "Missouri",
+          "timezone": "America/Chicago"
+        },
+        "573": {
+          "name": "Missouri",
+          "timezone": "America/Chicago"
+        },
+        "636": {
+          "name": "Missouri",
+          "timezone": "America/Chicago"
+        },
+        "660": {
+          "name": "Missouri",
+          "timezone": "America/Chicago"
+        },
+        "816": {
+          "name": "Missouri",
+          "timezone": "America/Chicago"
+        },
+        "216": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "234": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "330": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "419": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "440": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "513": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "567": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "614": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "740": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "937": {
+          "name": "Ohio",
+          "timezone": "America/New_York"
+        },
+        "401": {
+          "name": "Rhode Island",
+          "timezone": "America/New_York"
+        },
+        "202": {
+          "name": "Washington, DC",
+          "timezone": "America/New_York"
+        },
+        "340": {
+          "name": "Virgin Islands",
+          "timezone": "America/Halifax"
+        },
+        "605": {
+          "name": "South Dakota",
+          "timezone": "America/Chicago"
+        },
+        "303": {
+          "name": "Colorado",
+          "timezone": "America/Denver"
+        },
+        "719": {
+          "name": "Colorado",
+          "timezone": "America/Denver"
+        },
+        "720": {
+          "name": "Colorado",
+          "timezone": "America/Denver"
+        },
+        "970": {
+          "name": "Colorado",
+          "timezone": "America/Denver"
+        },
+        "201": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "551": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "609": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "732": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "848": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "856": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "862": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "908": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "973": {
+          "name": "New Jersey",
+          "timezone": "America/New_York"
+        },
+        "276": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "434": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "540": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "571": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "703": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "757": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "804": {
+          "name": "Virginia",
+          "timezone": "America/New_York"
+        },
+        "671": {
+          "name": "Guam",
+          "timezone": "Pacific/Guam"
+        },
+        "206": {
+          "name": "Washington",
+          "timezone": "America/New_York"
+        },
+        "253": {
+          "name": "Washington",
+          "timezone": "America/New_York"
+        },
+        "360": {
+          "name": "Washington",
+          "timezone": "America/New_York"
+        },
+        "425": {
+          "name": "Washington",
+          "timezone": "America/New_York"
+        },
+        "509": {
+          "name": "Washington",
+          "timezone": "America/New_York"
+        },
+        "252": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "336": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "704": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "828": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "910": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "919": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "980": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "984": {
+          "name": "North Carolina",
+          "timezone": "America/New_York"
+        },
+        "212": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "315": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "347": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "516": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "518": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "585": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "607": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "631": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "646": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "716": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "718": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "845": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "914": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "917": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "929": {
+          "name": "New York",
+          "timezone": "America/New_York"
+        },
+        "702": {
+          "name": "Nevada",
+          "timezone": "America/Los_Angeles"
+        },
+        "725": {
+          "name": "Nevada",
+          "timezone": "America/Los_Angeles"
+        },
+        "775": {
+          "name": "Nevada",
+          "timezone": "America/Los_Angeles"
+        },
+        "207": {
+          "name": "Maine",
+          "timezone": "America/New_York"
+        }
+      },
+      "zones": [
+        "America/Los_Angeles",
+        "America/New_York",
+        "America/Detroit",
+        "America/Kentucky/Louisville",
+        "America/Kentucky/Monticello",
+        "America/Indiana/Indianapolis",
+        "America/Indiana/Vincennes",
+        "America/Indiana/Winamac",
+        "America/Indiana/Marengo",
+        "America/Indiana/Petersburg",
+        "America/Indiana/Vevay",
+        "America/Chicago",
+        "America/Indiana/Tell_City",
+        "America/Indiana/Knox",
+        "America/Menominee",
+        "America/North_Dakota/Center",
+        "America/North_Dakota/New_Salem",
+        "America/North_Dakota/Beulah",
+        "America/Denver",
+        "America/Boise",
+        "America/Phoenix",
+        "America/Anchorage",
+        "America/Juneau",
+        "America/Sitka",
+        "America/Metlakatla",
+        "America/Yakutat",
+        "America/Nome",
+        "America/Adak",
+        "Pacific/Honolulu"
+      ]
+    },
+    "UY": {
+      "name": "Uruguay",
+      "areaCode": {},
+      "zones": [
+        "America/Montevideo"
+      ]
+    },
+    "UZ": {
+      "name": "Uzbekistan",
+      "areaCode": {},
+      "zones": [
+        "Asia/Samarkand",
+        "Asia/Tashkent"
+      ]
+    },
+    "VA": {
+      "name": "Vatican City",
+      "areaCode": {},
+      "zones": [
+        "Europe/Rome"
+      ]
+    },
+    "VC": {
+      "name": "St Vincent",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "VE": {
+      "name": "Venezuela",
+      "areaCode": {},
+      "zones": [
+        "America/Caracas"
+      ]
+    },
+    "VG": {
+      "name": "Virgin Islands (UK)",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "VI": {
+      "name": "Virgin Islands (US)",
+      "areaCode": {},
+      "zones": [
+        "America/Port_of_Spain"
+      ]
+    },
+    "VN": {
+      "name": "Vietnam",
+      "areaCode": {},
+      "zones": [
+        "Asia/Bangkok",
+        "Asia/Ho_Chi_Minh"
+      ]
+    },
+    "VU": {
+      "name": "Vanuatu",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Efate"
+      ]
+    },
+    "WF": {
+      "name": "Wallis & Futuna",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Wallis"
+      ]
+    },
+    "WS": {
+      "name": "Samoa (western)",
+      "areaCode": {},
+      "zones": [
+        "Pacific/Apia"
+      ]
+    },
+    "YE": {
+      "name": "Yemen",
+      "areaCode": {},
+      "zones": [
+        "Asia/Riyadh"
+      ]
+    },
+    "YT": {
+      "name": "Mayotte",
+      "areaCode": {},
+      "zones": [
+        "Africa/Nairobi"
+      ]
+    },
+    "ZA": {
+      "name": "South Africa",
+      "areaCode": {},
+      "zones": [
+        "Africa/Johannesburg"
+      ]
+    },
+    "ZM": {
+      "name": "Zambia",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "ZW": {
+      "name": "Zimbabwe",
+      "areaCode": {},
+      "zones": [
+        "Africa/Maputo"
+      ]
+    },
+    "UK": {
+      "name": "United Kingdom/Guernsey/Jersey",
+      "areaCode": {},
+      "zones": [
+        "Europe/London"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="90dp">
+        <ImageView
+            android:id="@+id/imgcountry"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/country"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewcountrytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Global Phone System"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/textviewcountryinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Your phone number from 50+ countries and call around the globe"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="No Desk Phone Required."
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="40dp"/>
+</LinearLayout>

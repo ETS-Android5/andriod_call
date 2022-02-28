@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContactsAccountType
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ContactsDataKind
+        android:mimeType="vnd.android.cursor.item/com.callhippo.bueno.callhippo.callhippo_vvvv"
+        android:icon="@drawable/ic_launcher_v2"
+        android:summaryColumn="data2"
+        android:detailColumn="data3"/>
+</ContactsAccountType>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+        <!-- Contents will go here..-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/recording_caution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="After Call Work is not available in your plan."
+                android:textSize="18sp"
+                android:textColor="@color/icon_disabled"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/recording_advise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Upgrade your plan."
+                android:textSize="18sp"
+                android:textColor="@color/icon_disabled"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/recording_caution"
+                />
+            <LinearLayout
+                android:id="@+id/layoutcaution_call_recording"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/circle_outline_recording_play"
+                android:elevation="4dp"
+                android:layout_below="@+id/recording_advise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:id="@+id/btn_recording_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/btncautionclose"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="@drawable/round_button_background"-->
+    <!--android:gravity="center_vertical|center_horizontal"-->
+    <!--android:onClick="cancelActivity"-->
+    <!--android:text="X"-->
+    <!--android:textColor="#FFF"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">CallHippo</string>
+    <string name="isliveAPK">true</string>
+    <string name="log_out">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="write_message">Write a Message..</string>
+    <string name="write_phonenumber">Type a name, phone number</string>
+    <string name="write_phonenumber_demo">Type a phone number</string>
+    <string name="content_small">This is the preview </string>
+    <string name="cant_send">Can\'t send sms to this contact.</string>
+    <string name="please_write_message">Please write some message</string>
+    <string name="ok">OK</string>
+    <string name="permission_contacts_rationale">Contact Permission is required to allow the app to access your device contact.</string>
+    <string name="permision_available_contacts">Contact Permission granted personal contacts are integrated with the app.</string>
+    <string name="permissions_not_granted">Please allow the Contact Permission to integrate your personal contacts.</string>
+    <string name="permission_camera_rationale">Microphone Permission is required to make and receive calls.</string>
+    <string name="permision_available_call">Microphone Permission granted. You can now start calling.</string>
+    <string name="permissions_audio_not_granted">Micro Phone permissions were not granted.</string>
+    <string name="change_pass"><u>Change Password</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_code"><u>Enter your Verification Code</u></string>
+    <string-array name="credits_options">
+        <item>$ 30</item>
+        <item>$ 50</item>
+        <item>$ 75</item>
+        <item>$ 100</item>
+    </string-array>
+
+    <string-array name="reminder_options">
+        <item>later</item>
+        <item>in an hour</item>
+        <item> tomorrow </item>
+        <item>in a week</item>
+
+    </string-array>
+    <string name="title_activity_settings_act">Settings_act</string>
+
+</resources>

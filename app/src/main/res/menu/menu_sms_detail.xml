@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add Contact"
+        android:visible="false"
+        android:icon="@drawable/ic_plus_b"
+        app:showAsAction="collapseActionView|withText"/>
+
+    <item
+        android:id="@+id/action_call"
+        android:title="Call"
+        android:icon="@drawable/ic_smscall"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/action_edit"
+        android:title="Edit Contact"
+        android:visible="false"
+        android:icon="@drawable/ic_edit_b"
+        app:showAsAction="collapseActionView|withText"/>
+
+
+
+    <item
+        android:id="@+id/action_cancel_msg"
+        android:icon="@drawable/icon_cross"
+        android:title="Cancel"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_msg_del"
+        android:icon="@drawable/icon_del_3"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+
+
+
+
+
+</menu>

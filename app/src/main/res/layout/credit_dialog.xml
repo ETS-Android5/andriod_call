@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|left"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Credits"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left|center"/>
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_group">
+
+
+            <RadioButton
+                android:id="@+id/r_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="    $200"/>
+
+            <RadioButton
+                android:id="@+id/r_100"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="    $100"/>
+
+            <RadioButton
+                android:id="@+id/r_50"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="    $50"/>
+
+            <RadioButton
+                android:id="@+id/r_30"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="    $30"/>
+
+
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btn_ok1"
+            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:text="ok"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

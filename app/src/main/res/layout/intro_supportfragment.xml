@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="110dp">
+        <ImageView
+            android:id="@+id/imgsupport"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/onboard_misscall"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewsupporttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Never Miss a Call Ever Again"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/textviewsupportinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forward your business calls to your mobile Number and never worry about missing an important call"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+</LinearLayout>

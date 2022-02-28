@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:background="@color/colorPrimary">
+        <!-- Contents will go here..-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/callingstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Called +18002002207"
+                android:textSize="16sp"
+                android:textColor="@color/icon_disabled"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <LinearLayout
+                android:id="@+id/callinfolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/callingstate"
+                android:layout_marginTop="4dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/callfromnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="via Sales"
+                    android:textSize="14sp"
+                    android:textColor="@color/icon_disabled"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/callingtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="at 4:55 AM"
+                    android:textSize="14sp"
+                    android:textColor="@color/icon_disabled"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    />
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/SeekBarplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/callinfolayout"
+                android:layout_marginTop="4dp"/>
+            <LinearLayout
+                android:id="@+id/layoutplay_call_recording"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_outline_recording_play"
+                android:elevation="4dp"
+                android:layout_below="@+id/SeekBarplay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                >
+                <ImageView
+                    android:id="@+id/btn_recordingPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_pause_white_24dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnclose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="cancelActivity"
+        android:text="X"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

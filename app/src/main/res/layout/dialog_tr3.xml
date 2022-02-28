@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:gravity="end">
+
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cross"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/round_corner_drawable"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:paddingStart="5dp"
+                android:layout_weight="1">
+
+
+
+                <ImageView
+                    android:id="@+id/img_ug1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_truser_1grey"
+                    android:visibility="visible"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/img_u1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_truser_1b"
+                    android:visibility="gone"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center">
+
+
+                <ImageView
+                    android:id="@+id/img_ug2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_truser_1grey"
+                    android:visibility="gone"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/img_u2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_truser_1b"
+                    android:visibility="visible"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <Button
+                android:id="@+id/btn_fromnumber"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="#9c9c9c"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="from number"/>
+
+
+
+            <Button
+                android:id="@+id/btn_tonumber"
+                android:layout_weight="1"
+                android:background="#9c9c9c"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:text="to number"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_transfercall"
+                android:id="@+id/btn_transfercall"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:text="Transfer Call"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp">
+
+
+            <Button
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_transfercall"
+                android:id="@+id/btn_mergecall"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:text="Merge Call"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <Button
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="#FF280B"
+            android:textSize="12sp"
+            android:id="@+id/btn_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/white"
+            android:text="Hang up"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

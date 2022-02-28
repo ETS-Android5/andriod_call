@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_outline_userprofile"
+            android:padding="4dp"
+            android:layout_marginTop="30dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_outline_white_24dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            >
+            <LinearLayout
+                android:id="@+id/usercall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_outline_call_contact"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btnIncomingReceive"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_call_white_24dp_new" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/usermessage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_outline_textsms"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btnIncomingReceive2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_textsms_white_24dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/useredit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_outline_edit"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/btnIncomingReceive1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_mode_edit_white_24dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/userdel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_circle_del"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/img_del"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="2dp"
+                    android:src="@drawable/icon_del_w" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="#C22503"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

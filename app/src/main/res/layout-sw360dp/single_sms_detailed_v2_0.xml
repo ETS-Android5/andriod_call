@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_smsview_margin"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+    <!--android:id="@+id/time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_margin="@dimen/time_margin"-->
+    <!--/>-->
+    <LinearLayout
+        android:id="@+id/receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:gravity="left">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/smsImage"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/receive_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="end|start"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textColor="@color/colorsilver"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/receive_message"
+                android:textIsSelectable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/receive_rounded_background_v2"
+                android:fontFamily="@font/proximanovasoft_regular"
+                android:paddingLeft="@dimen/activity_horizontal_margin_sms_leftright"
+                android:paddingTop="@dimen/activity_horizontal_margin_sms_topbottom"
+                android:paddingRight="@dimen/activity_horizontal_margin_sms_leftright"
+                android:paddingBottom="@dimen/activity_horizontal_margin_sms_topbottom"
+                android:text="ok"
+                android:textColor="@color/colorsilver"
+                android:textSize="@dimen/detailed_text_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sent_message_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin_sms_leftright"
+            android:paddingRight="5dp"
+            android:gravity="end"
+            android:text=""
+            android:textColor="@color/colorsilver"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/sent_message"
+            android:textIsSelectable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/sent_rounded_background_v2"
+            android:fontFamily="@font/proximanovasoft_medium"
+            android:paddingLeft="@dimen/activity_horizontal_margin_sms_leftright"
+            android:paddingTop="@dimen/activity_horizontal_margin_sms_topbottom"
+            android:paddingRight="@dimen/activity_horizontal_margin_sms_leftright"
+            android:paddingBottom="@dimen/activity_horizontal_margin_sms_topbottom"
+            android:text="@string/content_small"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detailed_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delete_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:layout_alignRight="@+id/sent"
+
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/sms_delete_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/custom_checkbox"
+            android:checked="false"
+            android:gravity="center|end"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

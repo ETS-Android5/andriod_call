@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/logdate"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialer_tx_date_time_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#6d6d6d"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logdetail"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.9"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="2dp"
+            >
+            <ImageView
+                android:id="@+id/imgcallstatus"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/incomingcall"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                />
+
+            <ImageView
+                android:id="@+id/imgcallforwared"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/icon_call_frwd1"
+                android:visibility="gone"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                />
+
+            <TextView
+                android:id="@+id/callstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#b6b6b6"></View>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                android:src="@drawable/circle_outline_calllog" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingLeft="4dp"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/callnumber1_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:text=""
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    />
+                <TextView
+                    android:id="@+id/callhipponumber_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="12sp"
+                    android:text=""
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/txt_tcall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:text="Transferd call"
+                    android:textColor="@color/colorPrimary"
+                    android:ellipsize="end"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="7dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/callTime_o"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11.00 "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/calltimehour_0"
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pm"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp">
+
+                    <TextView
+                        android:id="@+id/callduration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00:55"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorsilver"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:paddingTop="6dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:id="@+id/imgcalling"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:src="@drawable/callend"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--/>-->
+
+
+        <LinearLayout
+            android:id="@+id/call_recording"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutplay_call_recording"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle_outline_recording_calllog"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:id="@+id/btn_recording_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_play_arrow_white_24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutcall_call_recording"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/circle_outline_answer_calllog"
+            android:elevation="4dp"
+            android:padding="6dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:src="@drawable/ic_call_white_24dp_new" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:id="@+id/layout_call"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/circle_outline_answer_calllog"
+                android:elevation="4dp"
+                android:padding="6dp"
+                android:visibility="visible">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_call_white_24dp_new" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/l_detail_v2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_caller"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logo_drawer_user_v2"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_hippo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_hippo_bg_v3"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/log_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/callnumber1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasofts_semibold"
+                    android:text="caller name "
+                    android:textColor="@color/font_calllog"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/callhipponumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:maxLength="17"
+                    android:text="tech department"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="|"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/callTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="10:00"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/calltimehour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="AM"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_calltype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/proximanovasoft_regular"
+                    android:text="Incoming "
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_incoming_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/icon_in_arrow_v2" />
+
+                <ImageView
+                    android:id="@+id/img_outgoing_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/icon_out_arrow_v2"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_detail_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_side" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l_trasfercalldetail"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2.58"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="2dp"
+            >
+            <ImageView
+                android:id="@+id/tr_imgcallstatus"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tr_callstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#b6b6b6"></View>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                android:src="@drawable/circle_outline_calllog" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="4dp"
+                android:gravity="left"
+                >
+                <TextView
+                    android:id="@+id/tr_callnumber1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="7dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tr_transfertype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="12sp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:paddingTop="6dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:id="@+id/imgcalling"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:src="@drawable/callend"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--/>-->
+
+
+        <LinearLayout
+            android:id="@+id/tr_call_recording"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/tr_layoutplay_call_recording"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle_outline_recording_calllog"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:id="@+id/tr_btn_recording_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_play_arrow_white_24dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/divider_new"/>
+</LinearLayout>
