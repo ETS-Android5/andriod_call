@@ -3,7 +3,7 @@ android_call is an open source softphone for voice and video over IP calling.
 It is fully SIP-based, for all calling..
 
 
-License
+**License**
 Copyright © Bueno Technologies Inc
 android_call is dual licensed, and is available either :
 
@@ -15,15 +15,15 @@ under a proprietary license, for a fee, to be used in closed source applications
 
 
 
-Documentation
+**Documentation**
 Refer this doc to understand how the app works. 
 https://docs.google.com/document/d/15AJlwUH2ZMbFxaqJO5UqP8suuVEMsS9MsC5NRvk7UwA/edit?usp=sharing
 
 
 
 
-
-Building the app
+**
+Building the app**
 If you have Android Studio, simply open the project, wait for the gradle synchronization and then build/install the app.
 It will download the linphone library from its Maven repository as an AAR file so you don't have to build anything yourself.
 If you don't have Android Studio, you can build and install the app using gradle:
@@ -36,7 +36,7 @@ When building a release AppBundle, use releaseAppBundle target instead of releas
 Also make sure you have a NDK installed and that you have an environment variable named ANDROID_NDK_HOME that contains the path to the NDK.
 This is to be able to include native libraries symbols into app bundle for the Play Store.
 
-Building a local SDK
+**Building a local SDK**
 
 Clone the linphone-sdk repository from out gitlab:
 
@@ -44,8 +44,8 @@ git clone https://github.com/Vivektilva/andriod_call.git --recursive
 
 Rebuild the app in Android Studio.
 
-
-Native debugging
+**
+Native debugging**
 
 
 Install LLDB from SDK Tools in Android-studio.
@@ -66,8 +66,8 @@ Make sure you are using the debug AAR in the app/build.gradle script and not the
 Debug app.
 
 
-
-Known issues
+**
+Known issues**
 
 
 If you encounter the couldn't find "libc++_shared.so" crash when the app starts, simply clean the project in Android Studio (under Build menu) and build again.
@@ -78,7 +78,7 @@ Push notification might not work when app has been started by Android Studio con
 
 
 
-Troubleshooting
+**Troubleshooting**
 
 Behavior issue
 When submitting an issue on our Github repository, please follow the template and attach the matching library logs:
@@ -96,7 +96,7 @@ Finally paste the link to the uploaded logs (link is already in the clipboard af
 
 
 
-Firebase 
+**Firebase** 
 Now that Google Cloud Messaging has been deprecated and will be completely removed on April 11th 2019, the only official way of using push notifications is through Firebase.
 However to make Firebase push notifications work, the project needs to have a app/google-services.json file that contains the configuration.
 You can configure your firebase project and setup google-services.json file to get push notifiations and for incoming calls . 
